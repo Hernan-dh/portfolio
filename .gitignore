@@ -1,0 +1,18 @@
+# Local and private files
+.env
+.env.*
+!.env.example
+
+# Python and tool caches
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Browser reviews and OS files
+*-review.png
+.review-*/
+.edge-*/
+.DS_Store
+Thumbs.db
