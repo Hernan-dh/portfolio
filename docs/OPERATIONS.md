@@ -8,6 +8,8 @@ python -m http.server 4173
 
 Open `http://localhost:4173`. The embedded agent requires an internet connection.
 
+Test localization with an English and an `es-*` browser locale. Confirm that the header selector switches all visible copy, metadata, and accessibility labels, and that a manual selection survives a reload.
+
 ## Verification
 
 ```bash

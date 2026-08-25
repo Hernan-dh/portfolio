@@ -10,11 +10,15 @@ Static portfolio for Hernán de Haro. It presents his profile and projects and e
 Browser
 ├── index.html       content and structure
 ├── styles.css      responsive presentation
-├── script.js       menu, animations, and current year
+├── script.js       localization, menu, animations, and current year
 └── HTTPS iframe ── Agentic Twin on Render
 ```
 
 There is no backend, database, build step, or local runtime dependency. Google Fonts and Agentic Twin are external resources; the primary content remains available if either service fails.
+
+## Localization
+
+English is the source and fallback language. On first load, `script.js` selects Spanish when the browser language starts with `es`; every other browser language receives English. Visitors can override that choice from the header, and the selection is stored locally for future visits. The embedded Agentic Twin manages its language independently.
 
 ## Trust boundaries
 

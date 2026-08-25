@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="es" class="no-js">
+<html lang="en" class="no-js">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio de Hernán de Haro: automatización, IoT, infraestructura, investigación y sistemas de información.">
+  <meta name="description" content="Hernán de Haro's portfolio: automation, IoT, infrastructure, research, and information systems.">
   <meta name="theme-color" content="#f4f3ee">
   <title>Hernán de Haro — Portfolio</title>
   <script>document.documentElement.classList.replace('no-js', 'js');</script>
@@ -14,30 +14,39 @@
   <script src="script.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#content">Saltar al contenido</a>
+  <a class="skip-link" href="#content" data-i18n="skipLink">Skip to content</a>
 
   <header class="site-header">
     <a class="brand" href="#home"><span>Hernán de Haro</span><small>Portfolio</small></a>
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-      <span></span><span></span><span class="sr-only">Abrir menú</span>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-i18n-aria-label="openMenu">
+      <span></span><span></span><span class="sr-only" data-i18n="openMenu">Open menu</span>
     </button>
-    <nav id="site-nav" class="site-nav" aria-label="Navegación principal">
-      <a href="#projects">Proyectos</a>
-      <a href="#profile">Perfil</a>
-      <a href="#contact">Contacto</a>
-    </nav>
+    <div class="header-actions">
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation" data-i18n-aria-label="mainNavigation">
+        <a href="#projects" data-i18n="navProjects">Projects</a>
+        <a href="#profile" data-i18n="navProfile">Profile</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+      </nav>
+      <label class="language-control">
+        <span data-i18n="languageLabel">Language</span>
+        <select id="language-selector" aria-label="Language selector" data-i18n-aria-label="languageSelector">
+          <option value="en">English</option>
+          <option value="es">Español</option>
+        </select>
+      </label>
+    </div>
   </header>
 
   <main id="content">
     <section class="intro" id="home">
-      <p class="section-index reveal">01 / Introducción</p>
+      <p class="section-index reveal" data-i18n="introIndex">01 / Introduction</p>
       <div class="intro-content reveal">
         <h1>Hernán de Haro</h1>
-        <p class="intro-role">Generalista técnico e investigador analítico.</p>
-        <p class="intro-text">Trabajo con automatización, monitoreo, infraestructura y organización de información. Este sitio reúne algunos de mis proyectos y el recorrido que los conecta.</p>
-        <p class="location">Buenos Aires, Argentina · 2026</p>
+        <p class="intro-role" data-i18n="introRole">Technical generalist and analytical researcher.</p>
+        <p class="intro-text" data-i18n="introText">I work with automation, monitoring, infrastructure, and information organization. This site brings together some of my projects and the experience that connects them.</p>
+        <p class="location" data-i18n="location">Buenos Aires, Argentina · 2026</p>
       </div>
-      <div class="intro-visual reveal" aria-label="Áreas principales del portfolio">
+      <div class="intro-visual reveal" aria-label="Main portfolio areas" data-i18n-aria-label="visualLabel">
         <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
         <div class="visual-core"><small>PORTFOLIO</small><strong>HDH</strong><span>2026</span></div>
         <span class="visual-tag tag-a">AUTOMATION</span><span class="visual-tag tag-b">RESEARCH</span><span class="visual-tag tag-c">INFRA</span><span class="visual-tag tag-d">DATA</span>
@@ -46,93 +55,72 @@
 
     <section class="projects section" id="projects">
       <header class="section-header reveal">
-        <p class="section-index">02 / Proyectos</p>
-        <h2>Trabajo seleccionado</h2>
-        <p>Proyectos técnicos actuales, documentados a partir del problema, las decisiones y el resultado.</p>
+        <p class="section-index" data-i18n="projectsIndex">02 / Projects</p>
+        <h2 data-i18n="projectsTitle">Selected work</h2>
+        <p data-i18n="projectsIntro">Current technical projects documented through their problem, decisions, and outcome.</p>
       </header>
 
       <article class="project reveal">
-        <div class="project-heading">
-          <p class="project-number">01</p>
-          <div>
-            <p class="project-kind">IA aplicada · 2026</p>
-            <h3>Agentic Twin</h3>
-          </div>
-        </div>
+        <div class="project-heading"><p class="project-number">01</p><div><p class="project-kind" data-i18n="twinKind">Applied AI · 2026</p><h3>Agentic Twin</h3></div></div>
         <div class="project-body">
           <div class="project-description">
-            <p>Asistente web bilingüe que representa mi perfil profesional y responde preguntas sobre mi experiencia, habilidades y proyectos.</p>
-            <p>El sistema construye su contexto a partir de un resumen profesional y un CV. Cuando una conversación requiere seguimiento, puede registrar un contacto o notificar una pregunta que no pudo responder.</p>
+            <p data-i18n="twinDescription">A bilingual web assistant that represents my professional profile and answers questions about my experience, skills, and projects.</p>
+            <p data-i18n="twinDetails">The system builds its context from a professional summary and résumé. When a conversation requires follow-up, it can record contact details or report a question it could not answer.</p>
             <dl class="project-facts">
-              <div><dt>Rol</dt><dd>Diseño, desarrollo y documentación</dd></div>
-              <div><dt>Tecnologías</dt><dd>Python, Gradio, Groq, tool calling</dd></div>
-              <div><dt>Estado</dt><dd>Prototipo funcional</dd></div>
+              <div><dt data-i18n="roleLabel">Role</dt><dd data-i18n="twinRole">Design, development, and documentation</dd></div>
+              <div><dt data-i18n="technologiesLabel">Technologies</dt><dd>Python, Gradio, Groq, tool calling</dd></div>
+              <div><dt data-i18n="statusLabel">Status</dt><dd data-i18n="twinStatus">Functional prototype</dd></div>
             </dl>
           </div>
           <div class="agent-embed">
             <div class="embed-header">
-              <span><span class="status-dot" aria-hidden="true"></span> Agentic Twin / en línea</span>
-              <a href="https://agentic-twin.onrender.com/" target="_blank" rel="noopener noreferrer">Abrir en pantalla completa ↗</a>
+              <span><span class="status-dot" aria-hidden="true"></span><span data-i18n="twinOnline">Agentic Twin / online</span></span>
+              <a href="https://agentic-twin.onrender.com/" target="_blank" rel="noopener noreferrer" data-i18n="openFullscreen">Open fullscreen ↗</a>
             </div>
-            <iframe
-              src="https://agentic-twin.onrender.com/"
-              title="Agentic Twin de Hernán de Haro"
-              loading="lazy"
-              allow="clipboard-write"
-              referrerpolicy="strict-origin-when-cross-origin"
-            ></iframe>
+            <iframe src="https://agentic-twin.onrender.com/" title="Hernán de Haro's Agentic Twin" data-i18n-title="iframeTitle" loading="lazy" allow="clipboard-write" referrerpolicy="strict-origin-when-cross-origin"></iframe>
           </div>
         </div>
       </article>
 
       <article class="project reveal">
-        <div class="project-heading">
-          <p class="project-number">02</p>
-          <div>
-            <p class="project-kind">Automatización e IoT · En curso</p>
-            <h3>Monitoreo de vivero</h3>
-          </div>
-        </div>
+        <div class="project-heading"><p class="project-number">02</p><div><p class="project-kind" data-i18n="greenhouseKind">Automation and IoT · In progress</p><h3 data-i18n="greenhouseTitle">Greenhouse monitoring</h3></div></div>
         <div class="project-body">
           <div class="project-description">
-            <p>Sistema de monitoreo y automatización para la operación cotidiana de un vivero. Integra sensores, bombas, cámaras, alertas y registro de datos.</p>
-            <p>El objetivo es concentrar información dispersa, detectar problemas con rapidez y construir una infraestructura que pueda mantenerse y ampliarse.</p>
+            <p data-i18n="greenhouseDescription">A monitoring and automation system for daily greenhouse operations. It integrates sensors, pumps, cameras, alerts, and data logging.</p>
+            <p data-i18n="greenhouseDetails">The goal is to consolidate scattered information, detect problems quickly, and build infrastructure that can be maintained and expanded.</p>
             <dl class="project-facts">
-              <div><dt>Áreas</dt><dd>IoT, operaciones e infraestructura</dd></div>
-              <div><dt>Tecnologías</dt><dd>Home Assistant, Linux, Docker, Python, SQLite</dd></div>
-              <div><dt>Estado</dt><dd>Implementación activa</dd></div>
+              <div><dt data-i18n="areasLabel">Areas</dt><dd data-i18n="greenhouseAreas">IoT, operations, and infrastructure</dd></div>
+              <div><dt data-i18n="technologiesLabel">Technologies</dt><dd>Home Assistant, Linux, Docker, Python, SQLite</dd></div>
+              <div><dt data-i18n="statusLabel">Status</dt><dd data-i18n="greenhouseStatus">Active implementation</dd></div>
             </dl>
           </div>
-          <div class="monitor" aria-label="Ejemplo conceptual del monitoreo del vivero">
-            <div class="monitor-head"><span>VIVERO / ESTADO</span><span class="online">OPERATIVO</span></div>
-            <div class="metrics"><div><small>Temperatura</small><strong>24.8°</strong></div><div><small>Humedad</small><strong>71%</strong></div><div><small>Bomba</small><strong>ON</strong></div><div><small>Alertas</small><strong>00</strong></div></div>
-            <div class="chart"><svg viewBox="0 0 500 100" preserveAspectRatio="none" role="img" aria-label="Gráfico ilustrativo"><path d="M0 70 C50 65,70 35,120 48 S200 78,250 55 S330 15,390 38 S450 70,500 29" fill="none" stroke="currentColor" stroke-width="2"/></svg></div>
+          <div class="monitor" aria-label="Conceptual greenhouse monitoring example" data-i18n-aria-label="monitorLabel">
+            <div class="monitor-head"><span data-i18n="monitorState">GREENHOUSE / STATUS</span><span class="online" data-i18n="operational">OPERATIONAL</span></div>
+            <div class="metrics"><div><small data-i18n="temperature">Temperature</small><strong>24.8°</strong></div><div><small data-i18n="humidity">Humidity</small><strong>71%</strong></div><div><small data-i18n="pump">Pump</small><strong>ON</strong></div><div><small data-i18n="alerts">Alerts</small><strong>00</strong></div></div>
+            <div class="chart"><svg viewBox="0 0 500 100" preserveAspectRatio="none" role="img" aria-label="Illustrative chart" data-i18n-aria-label="chartLabel"><path d="M0 70 C50 65,70 35,120 48 S200 78,250 55 S330 15,390 38 S450 70,500 29" fill="none" stroke="currentColor" stroke-width="2"/></svg></div>
           </div>
         </div>
       </article>
     </section>
 
     <section class="profile section" id="profile">
-      <header class="section-header reveal"><p class="section-index">03 / Perfil</p><h2>Recorrido y enfoque</h2></header>
+      <header class="section-header reveal"><p class="section-index" data-i18n="profileIndex">03 / Profile</p><h2 data-i18n="profileTitle">Background and approach</h2></header>
       <div class="profile-grid reveal">
         <div class="profile-copy">
-          <p>Soy un generalista técnico con formación y experiencia en ciencias de la información, escritura técnica, QA, desarrollo de negocios y operaciones de estudios pequeños.</p>
-          <p>Actualmente mi trabajo se concentra en automatización de viveros, monitoreo IoT, Linux, datos operativos y herramientas basadas en IA.</p>
-          <p>Me interesa entender cómo se organiza un sistema, qué información hace falta para observarlo y cómo documentarlo para que otras personas puedan trabajar con él.</p>
+          <p data-i18n="profileOne">I am a technical generalist with education and experience in information science, technical writing, QA, business development, and small-studio operations.</p>
+          <p data-i18n="profileTwo">My current work focuses on greenhouse automation, IoT monitoring, Linux, operational data, and AI-based tools.</p>
+          <p data-i18n="profileThree">I am interested in understanding how a system is organized, what information is needed to observe it, and how to document it so other people can work with it.</p>
         </div>
-        <div class="areas">
-          <h3>Áreas de trabajo</h3>
-          <ul><li>Automatización y monitoreo</li><li>Infraestructura Linux y Docker</li><li>Python y flujos de datos</li><li>Investigación y clasificación</li><li>QA y documentación técnica</li><li>Comunicación y operaciones</li></ul>
-        </div>
+        <div class="areas"><h3 data-i18n="workAreas">Areas of work</h3><ul><li data-i18n="areaAutomation">Automation and monitoring</li><li data-i18n="areaInfrastructure">Linux and Docker infrastructure</li><li data-i18n="areaData">Python and data workflows</li><li data-i18n="areaResearch">Research and classification</li><li data-i18n="areaQa">QA and technical documentation</li><li data-i18n="areaOperations">Communication and operations</li></ul></div>
       </div>
     </section>
 
     <section class="contact section" id="contact">
-      <p class="section-index reveal">04 / Contacto</p>
-      <div class="contact-content reveal"><h2>Contacto</h2><p>Podés consultar mis proyectos públicos y actividad técnica en GitHub.</p><a href="https://github.com/Hernan-dh" target="_blank" rel="noreferrer">github.com/Hernan-dh <span aria-hidden="true">↗</span></a></div>
+      <p class="section-index reveal" data-i18n="contactIndex">04 / Contact</p>
+      <div class="contact-content reveal"><h2 data-i18n="contactTitle">Contact</h2><p data-i18n="contactText">You can find my public projects and technical activity on GitHub.</p><a href="https://github.com/Hernan-dh" target="_blank" rel="noopener noreferrer">github.com/Hernan-dh <span aria-hidden="true">↗</span></a></div>
     </section>
   </main>
 
-  <footer><span>© <span id="year"></span> Hernán de Haro</span><span>Buenos Aires, Argentina</span></footer>
+  <footer><span>© <span id="year"></span> Hernán de Haro</span><span data-i18n="footerLocation">Buenos Aires, Argentina</span></footer>
 </body>
 </html>

@@ -57,6 +57,10 @@ footer { padding-inline: var(--gutter); }
 .site-nav { display: flex; gap: 36px; }
 .site-nav a { font: 500 11px var(--mono); letter-spacing: .08em; text-decoration: none; text-transform: uppercase; }
 .site-nav a:hover { text-decoration: underline; text-underline-offset: 6px; }
+.header-actions { display: flex; align-items: center; gap: 28px; }
+.language-control { display: flex; align-items: center; gap: 8px; color: var(--muted); font: 500 9px var(--mono); letter-spacing: .08em; text-transform: uppercase; }
+.language-control select { height: 32px; padding: 0 26px 0 9px; border: 1px solid var(--line); border-radius: 0; background: transparent; color: var(--ink); font: 500 10px var(--mono); text-transform: none; cursor: pointer; }
+.language-control select:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
 .menu-toggle { display: none; padding: 8px; border: 0; background: none; }
 
 .section-index,
@@ -175,6 +179,8 @@ footer { min-height: 100px; display: flex; align-items: center; justify-content:
   .menu-toggle span:not(.sr-only) { display: block; width: 24px; height: 1px; background: var(--ink); }
   .site-nav { position: absolute; inset: 68px 0 auto; display: none; flex-direction: column; padding: 28px 22px; border-bottom: 1px solid var(--line); background: var(--paper); }
   .site-nav.open { display: flex; }
+  .header-actions { gap: 12px; }
+  .language-control > span { display: none; }
   .intro { padding-top: 115px; }
   .intro h1 { font-size: clamp(50px, 16vw, 68px); }
   .intro-role { font-size: 25px; }
