@@ -1,4 +1,4 @@
-"""Activa los Git hooks versionados para este clon."""
+"""Enable the repository-managed Git hooks for this clone."""
 
 import stat
 import subprocess
@@ -9,4 +9,4 @@ HOOK = ROOT / ".githooks" / "pre-commit"
 
 HOOK.chmod(HOOK.stat().st_mode | stat.S_IXUSR | stat.S_IXGRP | stat.S_IXOTH)
 subprocess.run(["git", "-C", str(ROOT), "config", "core.hooksPath", ".githooks"], check=True)
-print("Hooks activados para este clon: .githooks")
+print("Hooks enabled for this clone: .githooks")

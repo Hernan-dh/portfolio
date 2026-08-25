@@ -2,4 +2,4 @@
 set -eu
 
 root=$(git rev-parse --show-toplevel)
-exec "$root/scripts/verificar.sh"
+exec "$root/scripts/verify.sh"

@@ -16,10 +16,10 @@ elif command -v python3 >/dev/null 2>&1 && works python3; then
 elif command -v python >/dev/null 2>&1 && works python; then
     python=python
 elif command -v py >/dev/null 2>&1 && works py -3; then
-    exec py -3 "$root/scripts/verificar.py"
+    exec py -3 "$root/scripts/verify.py"
 else
-    echo "No se encontró Python 3." >&2
+    echo "Python 3 was not found." >&2
     exit 1
 fi
 
-exec "$python" "$root/scripts/verificar.py"
+exec "$python" "$root/scripts/verify.py"

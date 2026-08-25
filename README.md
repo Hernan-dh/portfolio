@@ -1,27 +1,27 @@
 # Portfolio — Hernán de Haro
 
-Portfolio estático, responsive y sin dependencias. Está diseñado para publicarse directamente en GitHub Pages, Cloudflare Pages, Netlify o cualquier hosting estático.
+A dependency-free, responsive static portfolio. It can be published directly to GitHub Pages, Cloudflare Pages, Netlify, or any static host.
 
-## Desarrollo local
+## Local development
 
-Abrí `index.html` directamente o iniciá un servidor local:
+Open `index.html` directly or start a local server:
 
 ```powershell
 python -m http.server 4173
 ```
 
-Luego visitá `http://localhost:4173`.
+Then visit `http://localhost:4173`.
 
-## Agregar proyectos
+## Adding projects
 
-Duplicá una tarjeta con la clase `.project-card` en `index.html`. Si el proyecto merece un caso de estudio, agregá una página dentro de una carpeta propia y enlazala desde la tarjeta.
+Add a new `.project` article in `index.html`. If the project needs a case study, create a dedicated directory and link it from the project entry.
 
-## Verificar y publicar
+## Verification and publishing
 
 ```powershell
-python scripts/verificar.py
-python scripts/publicar.py --vista-previa
-python scripts/publicar.py
+python scripts/verify.py
+python scripts/publish.py --preview
+python scripts/publish.py
 ```
 
-La publicación verifica primero el repositorio, muestra los archivos incluidos y exige una confirmación explícita antes de crear el commit y hacer push. La operación completa está documentada en `docs/OPERACION.md`.
+Publishing verifies the repository, lists every included file, and requires explicit confirmation before committing and pushing. See `docs/OPERATIONS.md` for the complete workflow.

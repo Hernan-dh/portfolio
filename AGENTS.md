@@ -1,16 +1,16 @@
-# Instrucciones para agentes
+# Agent instructions
 
-## Documentación continua
+## Continuous documentation
 
-- Documentar en la misma tarea los cambios funcionales, técnicos u operativos duraderos.
-- Actualizar `docs/ARQUITECTURA.md` cuando cambien componentes, integraciones o flujos.
-- Actualizar `docs/OPERACION.md` cuando cambien verificación, publicación o despliegue.
-- Crear un ADR solo cuando existan alternativas relevantes y la decisión no sea evidente en el código.
-- No documentar cambios cosméticos ni refactors sin cambios de comportamiento.
-- No incluir credenciales, datos privados ni valores locales en archivos versionados.
+- Document lasting functional, technical, or operational changes in the same task.
+- Update `docs/ARCHITECTURE.md` when components, integrations, or flows change.
+- Update `docs/OPERATIONS.md` when verification, publishing, or deployment changes.
+- Create an ADR only when relevant alternatives exist and the decision is not evident from the code.
+- Do not document cosmetic changes or refactors without behavioral changes.
+- Never include credentials, private data, or local values in versioned files.
 
-## Publicación
+## Publishing
 
-- Ejecutar `./scripts/verificar.sh` antes de publicar.
-- No crear commits ni hacer push sin autorización explícita del usuario.
-- No usar push forzado.
+- Run `./scripts/verify.sh` before publishing.
+- Do not create commits or push without explicit user authorization.
+- Never force-push.
