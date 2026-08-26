@@ -16,6 +16,8 @@ Browser
 
 There is no backend, database, build step, or local runtime dependency. Google Fonts and Agentic Twin are external resources; the primary content remains available if either service fails.
 
+Repository publication is handled separately by the dependency-free `scripts/publish.py`. It sends a bounded change context to Gemini or Groq to propose commit metadata before explicit human confirmation.
+
 ## Localization
 
 English is the source and fallback language. On first load, `script.js` selects Spanish when the browser language starts with `es`; every other browser language receives English. Visitors can override that choice from the header, and the selection is stored locally for future visits. The embedded Agentic Twin manages its language independently.
@@ -26,6 +28,7 @@ English is the source and fallback language. On first load, `script.js` selects 
 - The embedded conversation belongs to Agentic Twin and runs on Render.
 - The iframe only receives clipboard-write permission.
 - External links isolate the originating window.
+- Publishing provider keys remain in the local environment and are never included in change context or diagnostic output.
 
 ## Related decisions
 

@@ -42,9 +42,11 @@ python scripts/publish.py --preview
 python scripts/publish.py
 ```
 
-The first command does not modify Git. The second verifies the repository, lists every included file, and requires typing `PUBLISH` before staging, committing, and pushing changes. It never force-pushes.
+The first command does not modify Git. The dependency-free script verifies the repository and sends a size-limited change context to `gemini-3.5-flash`, then `gemini-3.7-flash`, and finally Groq as fallbacks. Provider output is validated before display. Copy `.env.example` to `.env` and configure at least one API key; keys remain local and are sent only in request headers.
 
-Generated title and description can be overridden:
+The interactive command lists every included file and requires typing `PUBLISH` before staging, re-verifying, committing, and pushing changes. It never force-pushes. Each provider attempt defaults to a 15-second timeout.
+
+External generation can be bypassed by providing both values:
 
 ```bash
 python scripts/publish.py --title "feat: describe change" --description "Summary of scope and purpose."
