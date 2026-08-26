@@ -42,7 +42,7 @@ python scripts/publish.py --preview
 python scripts/publish.py
 ```
 
-The first command does not modify Git. The dependency-free script verifies the repository and sends a size-limited change context to `gemini-3.5-flash`, then `gemini-3.7-flash`, and finally Groq as fallbacks. Provider output is validated before display. Copy `.env.example` to `.env` and configure at least one API key; keys remain local and are sent only in request headers.
+The first command does not modify Git. The dependency-free script verifies the repository and tries Gemini 3.5 Flash (`minimal` reasoning), Gemini 3.7 Flash (`low`), Gemini 3.5 Flash-Lite (`minimal`), Gemini 3.1 Flash-Lite (`low`), and Groq (`low`) in that order. Requests identify themselves with `portfolio-publish/1.0`; provider output is validated before display. Copy `.env.example` to `.env` and configure at least one API key; keys remain local and are sent only in request headers.
 
 The interactive command lists every included file and requires typing `PUBLISH` before staging, re-verifying, committing, and pushing changes. It never force-pushes. Each provider attempt defaults to a 15-second timeout.
 
