@@ -13,6 +13,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 ESSENTIAL_FILES = (
+    "README.md", ".env.example",
     "index.html", "styles.css", "script.js", "AGENTS.md",
     "docs/ARCHITECTURE.md", "docs/OPERATIONS.md", "docs/decisions/README.md",
 )
@@ -21,6 +22,8 @@ PRIVATE_SUFFIXES = {".key", ".pem", ".p12", ".pfx"}
 GENERATED_PARTS = {"__pycache__", ".venv", "venv", "node_modules"}
 TEXT_SUFFIXES = {".css", ".html", ".js", ".json", ".md", ".py", ".sh", ".yml", ".yaml"}
 SECRET_PATTERNS = (
+    re.compile(r"AIza[0-9A-Za-z_-]{35}"),
+    re.compile(r"\b(?:gsk_|github_pat_|sk-or-v1-)[A-Za-z0-9_-]{20,}"),
     re.compile(r"-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----"),
     re.compile(r"\bgh[opurs]_[A-Za-z0-9_]{30,}\b"),
     re.compile(r"\bsk-(?:proj-)?[A-Za-z0-9_-]{20,}\b"),
@@ -73,7 +76,8 @@ def check_files(verification: Verification, files: list[Path]) -> None:
         if not path.is_file():
             continue
         relative = path.relative_to(ROOT)
-        if path.name.lower() in PRIVATE_NAMES or path.suffix.lower() in PRIVATE_SUFFIXES:
+        private_environment = path.name.startswith(".env.") and path.name != ".env.example"
+        if private_environment or path.name.lower() in PRIVATE_NAMES or path.suffix.lower() in PRIVATE_SUFFIXES:
             verification.errors.append(f"Private file: {relative}")
         if {part.lower() for part in relative.parts} & GENERATED_PARTS:
             verification.errors.append(f"Generated file is not ignored: {relative}")
@@ -133,8 +137,9 @@ def main() -> int:
     check_files(verification, files)
     if shutil.which("node"):
         verification.run("JavaScript syntax", ["node", "--check", "script.js"])
+        verification.run("JavaScript behavior", ["node", "--test", "tests/site.test.cjs"])
     else:
-        print("[skip] Node.js is unavailable")
+        verification.errors.append("Node.js 20+ is required for JavaScript verification")
     if verification.errors:
         print("\nVerification failed:")
         for error in verification.errors:

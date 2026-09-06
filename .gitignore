@@ -16,3 +16,4 @@ venv/
 .edge-*/
 .DS_Store
 Thumbs.db
+.uv-cache/

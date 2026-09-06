@@ -55,3 +55,21 @@ python scripts/publish.py --title "feat: describe change" --description "Summary
 ## Deployment
 
 The repository can be deployed to any static host. It needs no build command; the publication directory is the repository root.
+
+## Public-source verification
+
+See [README](../README.md) for the reproducible setup. CI installs dependencies before invoking the verifier. Tests disable dotenv loading and provider telemetry and use synthetic inputs or mocked external calls; passing unit tests does not certify live services or production security.
+
+Node.js 20+ is required: the verifier runs the built-in Node test runner for localization and navigation behavior in addition to HTML and JavaScript syntax checks.
+
+
+## Publication review
+
+The portfolio does not include a license for its own code; the verifier does not require a LICENSE file. Preserve applicable notices and terms for third-party resources.
+
+Before publishing, run the verifier and review git diff and git status --short,
+especially new files. Keep real credentials in local environment files or hosting
+secrets, and preserve upstream license notices. Automated secret checks cover
+recognizable patterns in current source files; they do not certify the absence of
+secrets or scan every historical commit, remote ref, hosting log or fork. Removing
+a file from the working tree does not remove it from Git history.
