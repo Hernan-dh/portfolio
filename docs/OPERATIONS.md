@@ -10,6 +10,8 @@ Open `http://localhost:4173`. The embedded agents require an internet connection
 
 Test localization with an English and an `es-*` browser locale. Confirm that the header selector switches all visible copy, metadata, and accessibility labels, and that a manual selection survives a reload.
 
+Also verify the light/dark control persists after a reload and that the navigation, theme control, and project cards remain usable at a narrow mobile viewport.
+
 ## Verification
 
 ```bash

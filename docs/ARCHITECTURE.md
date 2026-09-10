@@ -24,6 +24,10 @@ AI Operations Desk is presented as a static, versioned screenshot with an isolat
 
 English is the source and fallback language. On first load, `script.js` selects Spanish when the browser language starts with `es`; every other browser language receives English. Visitors can override that choice from the header, and the selection is stored locally for future visits. The embedded agents manage their languages independently.
 
+## Appearance preference
+
+The header also lets visitors choose a light or dark theme. The preference is stored only in their browser under `portfolio-theme`; the layout remains responsive through the existing mobile breakpoints.
+
 ## Trust boundaries
 
 - The portfolio does not receive or persist visitor data.

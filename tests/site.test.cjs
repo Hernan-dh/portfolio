@@ -24,12 +24,12 @@ function element(dataset = {}) {
 }
 
 function load({ language = 'en', storageFails = false } = {}) {
-  const selector = element(), button = element(), nav = element(), reveal = element();
+  const selector = element(), button = element(), nav = element(), reveal = element(), themeToggle = element(), themeLabel = element();
   const translated = element({ i18n: 'navProjects' });
   const document = {
-    documentElement: {}, handlers: {},
+    documentElement: element(), handlers: {},
     querySelector(query) {
-      return { '#language-selector': selector, '.menu-toggle': button, '.site-nav': nav }[query] || null;
+      return { '#language-selector': selector, '.menu-toggle': button, '.site-nav': nav, '#theme-toggle': themeToggle, '#theme-label': themeLabel }[query] || null;
     },
     querySelectorAll(query) {
       if (query === '.reveal') return [reveal];
@@ -45,7 +45,7 @@ function load({ language = 'en', storageFails = false } = {}) {
     },
   });
   vm.runInContext(source, context);
-  return { context, document, selector, button, nav, reveal, translated };
+  return { context, document, selector, button, nav, reveal, translated, themeToggle, themeLabel };
 }
 
 test('all HTML localization keys exist in both languages', () => {
@@ -82,4 +82,12 @@ test('Escape closes the mobile menu and updates accessibility state', () => {
 
 test('content stays visible without IntersectionObserver', () => {
   assert.ok(load().reveal.classList.contains('visible'));
+});
+
+test('theme control switches between light and dark modes', () => {
+  const app = load();
+  app.themeToggle.handlers.click();
+  assert.equal(app.document.documentElement.dataset.theme, 'dark');
+  assert.equal(app.themeToggle.attrs['aria-pressed'], 'true');
+  assert.equal(app.themeLabel.textContent, 'Light mode');
 });

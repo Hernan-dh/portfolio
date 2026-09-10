@@ -55,10 +55,36 @@ Object.assign(translations.es, {
   contactText: 'Para colaboraciones en automatización con IA, operaciones técnicas, monitoreo, QA o sistemas de información, podés explorar mi trabajo público en GitHub.'
 });
 
+Object.assign(translations.en, { themeToggleLabel: 'Change color theme', themeToDark: 'Dark mode', themeToLight: 'Light mode' });
+Object.assign(translations.es, { themeToggleLabel: 'Cambiar tema de color', themeToDark: 'Modo oscuro', themeToLight: 'Modo claro' });
+
 const languageSelector = document.querySelector('#language-selector');
 const menuButton = document.querySelector('.menu-toggle');
 const navigation = document.querySelector('.site-nav');
 const revealElements = document.querySelectorAll('.reveal');
+const themeToggle = document.querySelector('#theme-toggle');
+const themeLabel = document.querySelector('#theme-label');
+
+function savedTheme() {
+  try { return localStorage.getItem('portfolio-theme'); } catch { return null; }
+}
+
+const systemTheme = typeof window.matchMedia === 'function' && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+let currentTheme = savedTheme() || systemTheme;
+
+function setTheme(theme, persist = false) {
+  currentTheme = theme === 'dark' ? 'dark' : 'light';
+  if (document.documentElement?.dataset) document.documentElement.dataset.theme = currentTheme;
+  else document.documentElement?.setAttribute?.('data-theme', currentTheme);
+  const language = document.documentElement.lang === 'es' ? 'es' : 'en';
+  const label = currentTheme === 'dark' ? translations[language].themeToLight : translations[language].themeToDark;
+  themeToggle?.setAttribute('aria-pressed', String(currentTheme === 'dark'));
+  themeToggle?.setAttribute('aria-label', translations[language].themeToggleLabel);
+  if (themeLabel) themeLabel.textContent = label;
+  if (persist) {
+    try { localStorage.setItem('portfolio-theme', currentTheme); } catch { /* Storage may be unavailable. */ }
+  }
+}
 
 function savedLanguage() {
   try { return localStorage.getItem('portfolio-language'); } catch { return null; }
@@ -83,6 +109,7 @@ function setLanguage(language, persist = false) {
     if (value) element.setAttribute('title', value);
   });
   if (languageSelector) languageSelector.value = selected;
+  setTheme(currentTheme);
   if (persist) {
     try { localStorage.setItem('portfolio-language', selected); } catch { /* Storage may be unavailable. */ }
   }
@@ -90,7 +117,9 @@ function setLanguage(language, persist = false) {
 
 const preferredLanguage = savedLanguage() || ((navigator.language || '').toLowerCase().startsWith('es') ? 'es' : 'en');
 setLanguage(preferredLanguage);
+setTheme(currentTheme);
 languageSelector?.addEventListener('change', (event) => setLanguage(event.target.value, true));
+themeToggle?.addEventListener('click', () => setTheme(currentTheme === 'dark' ? 'light' : 'dark', true));
 
 function closeMenu() {
   navigation?.classList.remove('open');
