@@ -57,6 +57,8 @@ Object.assign(translations.es, {
 
 Object.assign(translations.en, { themeToggleLabel: 'Change color theme', themeToDark: 'Dark mode', themeToLight: 'Light mode' });
 Object.assign(translations.es, { themeToggleLabel: 'Cambiar tema de color', themeToDark: 'Modo oscuro', themeToLight: 'Modo claro' });
+Object.assign(translations.en, { viewRepository: 'View repository ↗', repositoryLinkTitle: 'Open source repository', portfolioRepository: 'Portfolio source ↗' });
+Object.assign(translations.es, { viewRepository: 'Ver repositorio ↗', repositoryLinkTitle: 'Abrir repositorio fuente', portfolioRepository: 'Código fuente del portfolio ↗' });
 
 const languageSelector = document.querySelector('#language-selector');
 const menuButton = document.querySelector('.menu-toggle');
