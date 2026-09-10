@@ -109,7 +109,7 @@ footer { padding-inline: var(--gutter); }
 .section-header > p:last-child,
 .project-description > p,
 .profile-copy p,
-.contact-content p { text-align: justify; text-justify: inter-word; hyphens: auto; }
+.contact-content p { text-align: justify; text-justify: inter-word; hyphens: none; }
 .location { margin-top: 38px; font: 400 9px var(--mono); letter-spacing: .08em; text-transform: uppercase; }
 
 .intro-visual { position: relative; width: 100%; max-width: 590px; aspect-ratio: 1; justify-self: end; display: grid; place-items: center; border: 1px solid var(--visual-line); border-radius: 50%; }
