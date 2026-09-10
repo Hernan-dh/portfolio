@@ -63,7 +63,8 @@ Object.assign(translations.en, {
   greenhouseAreas: 'IoT, environmental monitoring, and technical operations',
   monitorLabel: 'Conceptual IoT monitoring example',
   monitorState: 'IOT / STATUS',
-  iotScreenshotCaption: 'Case analysis interface'
+  iotScreenshotCaption: 'IoT monitoring dashboard',
+  iotScreenshotAlt: 'IoT automation and monitoring dashboard'
 });
 
 Object.assign(translations.es, {
@@ -74,7 +75,8 @@ Object.assign(translations.es, {
   greenhouseAreas: 'IoT, monitoreo ambiental y operaciones técnicas',
   monitorLabel: 'Ejemplo conceptual de monitoreo IoT',
   monitorState: 'IOT / ESTADO',
-  iotScreenshotCaption: 'Interfaz de análisis de caso'
+  iotScreenshotCaption: 'Panel de monitoreo IoT',
+  iotScreenshotAlt: 'Panel de automatización y monitoreo IoT'
 });
 
 Object.assign(translations.en, { themeToggleLabel: 'Change color theme', themeToDark: 'Dark mode', themeToLight: 'Light mode' });
