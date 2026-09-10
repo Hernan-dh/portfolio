@@ -170,7 +170,7 @@ footer { padding-inline: var(--gutter); }
 .repo-panel { min-height: 500px; display: flex; flex-direction: column; justify-content: space-between; padding: clamp(28px, 5vw, 72px); background: var(--surface-strong); color: var(--on-strong); font-family: var(--mono); }
 .repo-panel p { margin: 0; color: var(--acid); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; }
 .repo-panel strong { font-size: clamp(25px, 3.5vw, 48px); font-weight: 400; line-height: 1.05; }
-.repo-panel a { align-self: flex-start; padding: 13px 16px; background: var(--acid); color: var(--ink); font-size: 10px; text-decoration: none; text-transform: uppercase; }
+.repo-panel a { align-self: flex-start; padding: 13px 16px; background: var(--acid); color: #111412; font-size: 10px; text-decoration: none; text-transform: uppercase; }
 .project-screenshot { min-width: 0; min-height: 500px; display: flex; flex-direction: column; margin: 0; padding: 12px; background: var(--surface-strong); }
 .project-screenshot img { width: 100%; min-height: 0; flex: 1; object-fit: cover; object-position: center; background: white; }
 .project-screenshot .monitor { min-height: 0; flex: 1; }
