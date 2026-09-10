@@ -85,8 +85,8 @@ Object.assign(translations.en, { viewRepository: 'View repository ↗', reposito
 Object.assign(translations.es, { viewRepository: 'Ver repositorio ↗', repositoryLinkTitle: 'Abrir repositorio fuente', portfolioRepository: 'Código fuente del portfolio ↗' });
 
 Object.assign(translations.en, {
-  operationsDescription: 'An auditable operations-triage system that turns unstructured access, billing, and technical requests into documented cases.',
-  operationsDetails: 'A JavaScript deterministic baseline validates input, retrieves a controlled procedure, enforces human-review policy, and records an audit trail. An optional n8n workflow adds a Gemini classifier through structured-output validation, then preserves the deterministic fallback when AI output is unavailable or invalid.',
+  operationsDescription: 'An auditable n8n-orchestrated operations-triage system that turns unstructured access, billing, and technical requests into documented cases.',
+  operationsDetails: 'The primary n8n workflow validates input, retrieves a controlled procedure, enforces human-review policy, and can enrich classification with Gemini through structured-output validation. A JavaScript deterministic engine remains a recoverable browser fallback when the webhook or AI output is unavailable or invalid.',
   coderDescription: 'A command-line coding assistant built around a single CrewAI coding agent that turns a requested Python program into files in a constrained workspace.',
   coderDetails: 'The agent can use bounded Serper or DDGS technical research and sandbox tools; generated programs run in network-disabled Docker containers. YAML configuration, resumable sessions, deterministic validation, and per-call Gemini, Groq, and OpenRouter fallback keep the workflow recoverable.',
   engineeringDescription: 'A command-line software-delivery pipeline with four CrewAI agents: an engineering lead, backend engineer, frontend engineer, and test engineer.',
@@ -104,8 +104,8 @@ Object.assign(translations.en, {
 });
 
 Object.assign(translations.es, {
-  operationsDescription: 'Sistema auditable de triage operativo que convierte solicitudes desestructuradas de acceso, facturación y soporte técnico en casos documentados.',
-  operationsDetails: 'Una base determinista en JavaScript valida la entrada, recupera un procedimiento controlado, aplica la política de revisión humana y registra una auditoría. Un workflow opcional de n8n suma un clasificador Gemini con validación de salida estructurada y conserva el fallback determinista si la IA falla o devuelve datos inválidos.',
+  operationsDescription: 'Sistema auditable de triage operativo orquestado con n8n que convierte solicitudes desestructuradas de acceso, facturación y soporte técnico en casos documentados.',
+  operationsDetails: 'El workflow principal de n8n valida la entrada, recupera un procedimiento controlado, aplica la política de revisión humana y puede enriquecer la clasificación con Gemini mediante validación de salida estructurada. Un motor determinista en JavaScript queda como fallback recuperable en el navegador si el webhook o la salida de IA no están disponibles o son inválidos.',
   coderDescription: 'Asistente de programación por línea de comandos construido alrededor de un único agente de código de CrewAI, que transforma un pedido de Python en archivos dentro de un workspace restringido.',
   coderDetails: 'El agente puede usar investigación técnica acotada con Serper o DDGS y herramientas de sandbox; los programas generados se ejecutan en contenedores Docker sin red. La configuración YAML, sesiones reanudables, validación determinista y fallback por llamada entre Gemini, Groq y OpenRouter mantienen el flujo recuperable.',
   engineeringDescription: 'Pipeline de entrega de software por línea de comandos con cuatro agentes CrewAI: líder de ingeniería, ingeniero backend, ingeniero frontend e ingeniero de pruebas.',
@@ -120,6 +120,20 @@ Object.assign(translations.es, {
   financialDetails: 'Las interfaces Gradio 6 y CLI procesan una empresa mediante investigación respaldada por Serper, tareas YAML secuenciales y análisis. Python, CrewAI y el fallback entre Gemini, Groq y OpenRouter preservan la investigación completada si falla un proveedor de modelos.',
   stockDescription: 'Flujo de investigación de mercado CrewAI de tres agentes: Buscador de Empresas en Tendencia, Investigador Financiero y Selector de Acciones.',
   stockDetails: 'Las interfaces Gradio 6 y CLI reciben un sector, usan búsquedas Serper acotadas y pasan listas de empresas validadas con Pydantic por tareas YAML secuenciales hasta seleccionar un candidato final. El fallback entre Gemini, Groq y OpenRouter detecta salidas malformadas o repetitivas sin reiniciar trabajo completado.'
+});
+
+Object.assign(translations.en, {
+  visualAutomation: 'AI AUTOMATION',
+  visualOperations: 'TECH OPS',
+  visualIot: 'IOT MONITORING',
+  visualInformation: 'INFORMATION'
+});
+
+Object.assign(translations.es, {
+  visualAutomation: 'AUTOMATIZACIÓN IA',
+  visualOperations: 'OPS TÉCNICAS',
+  visualIot: 'MONITOREO IOT',
+  visualInformation: 'INFORMACIÓN'
 });
 
 const languageSelector = document.querySelector('#language-selector');
