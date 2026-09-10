@@ -56,7 +56,14 @@ python scripts/publish.py --title "feat: describe change" --description "Summary
 
 ## Deployment
 
-The repository can be deployed to any static host. It needs no build command; the publication directory is the repository root.
+The portfolio is deployed to GitHub Pages after verification succeeds on a push
+to `main`. The deployment workflow uploads the repository root because the site
+needs no build step.
+
+Before the first deployment, select **GitHub Actions** under **Settings > Pages >
+Build and deployment > Source** in the GitHub repository. Later pushes to `main`
+will deploy automatically. Deployment status and the public URL are available in
+the `github-pages` environment and in the Actions tab.
 
 ## Public-source verification
 
