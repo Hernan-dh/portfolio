@@ -17,6 +17,44 @@ const translations = {
   }
 };
 
+Object.assign(translations.en, {
+  metaDescription: "Hernán de Haro's portfolio: AI automation, technical operations, IoT monitoring, infrastructure, QA, and information systems.",
+  introRole: 'AI automation and technical operations.',
+  introText: 'I design practical automation and reliable operational systems with Python, n8n, MCP, Docker, Linux, and IoT. This portfolio brings together AI workflows, monitoring tools, and the quality and information practices behind them.',
+  projectsIntro: 'Selected work in AI automation, technical operations, research systems, and IoT monitoring.',
+  profileTitle: 'Systems, operations, and information',
+  profileOne: 'I combine experience in information science, metadata, technical writing, QA, testing, business development, and small-studio operations.',
+  profileTwo: 'My current work focuses on AI automation, workflow design, IoT monitoring, Linux and Docker infrastructure, operational data, and reliable human-in-the-loop systems.',
+  profileThree: 'I turn complex processes into observable, maintainable systems by clarifying requirements, validating information, documenting decisions, and designing for the people who operate them.',
+  workAreas: 'Core areas',
+  areaAutomation: 'AI automation and workflow design',
+  areaInfrastructure: 'Linux, Docker, and self-hosted infrastructure',
+  areaData: 'Operational data, monitoring, and dashboards',
+  areaResearch: 'Information architecture, research, and retrieval',
+  areaQa: 'QA, testing, and technical documentation',
+  areaOperations: 'IoT, process improvement, and stakeholder operations',
+  contactText: 'For collaborations in AI automation, technical operations, monitoring, QA, or information systems, explore my public work on GitHub.'
+});
+
+Object.assign(translations.es, {
+  metaDescription: 'Portfolio de Hernán de Haro: automatización con IA, operaciones técnicas, monitoreo IoT, infraestructura, QA y sistemas de información.',
+  introRole: 'Automatización con IA y operaciones técnicas.',
+  introText: 'Diseño automatizaciones prácticas y sistemas operativos confiables con Python, n8n, MCP, Docker, Linux e IoT. Este portfolio reúne flujos de IA, herramientas de monitoreo y las prácticas de calidad e información que los sostienen.',
+  projectsIntro: 'Trabajo seleccionado en automatización con IA, operaciones técnicas, sistemas de investigación y monitoreo IoT.',
+  profileTitle: 'Sistemas, operaciones e información',
+  profileOne: 'Combino experiencia en ciencias de la información, metadatos, escritura técnica, QA, testing, desarrollo de negocios y operaciones de estudios pequeños.',
+  profileTwo: 'Mi trabajo actual se concentra en automatización con IA, diseño de workflows, monitoreo IoT, infraestructura Linux y Docker, datos operativos y sistemas confiables con supervisión humana.',
+  profileThree: 'Convierto procesos complejos en sistemas observables y mantenibles al aclarar requisitos, validar información, documentar decisiones y diseñar para quienes los operan.',
+  workAreas: 'Áreas principales',
+  areaAutomation: 'Automatización con IA y diseño de workflows',
+  areaInfrastructure: 'Infraestructura Linux, Docker y servicios autohosteados',
+  areaData: 'Datos operativos, monitoreo y dashboards',
+  areaResearch: 'Arquitectura de información, investigación y recuperación',
+  areaQa: 'QA, testing y documentación técnica',
+  areaOperations: 'IoT, mejora de procesos y operaciones con stakeholders',
+  contactText: 'Para colaboraciones en automatización con IA, operaciones técnicas, monitoreo, QA o sistemas de información, podés explorar mi trabajo público en GitHub.'
+});
+
 const languageSelector = document.querySelector('#language-selector');
 const menuButton = document.querySelector('.menu-toggle');
 const navigation = document.querySelector('.site-nav');
