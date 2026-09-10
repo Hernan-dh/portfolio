@@ -84,6 +84,44 @@ Object.assign(translations.es, { themeToggleLabel: 'Cambiar tema de color', them
 Object.assign(translations.en, { viewRepository: 'View repository ↗', repositoryLinkTitle: 'Open source repository', portfolioRepository: 'Portfolio source ↗' });
 Object.assign(translations.es, { viewRepository: 'Ver repositorio ↗', repositoryLinkTitle: 'Abrir repositorio fuente', portfolioRepository: 'Código fuente del portfolio ↗' });
 
+Object.assign(translations.en, {
+  operationsDescription: 'An auditable operations-triage system that turns unstructured access, billing, and technical requests into documented cases.',
+  operationsDetails: 'A JavaScript deterministic baseline validates input, retrieves a controlled procedure, enforces human-review policy, and records an audit trail. An optional n8n workflow adds a Gemini classifier through structured-output validation, then preserves the deterministic fallback when AI output is unavailable or invalid.',
+  coderDescription: 'A command-line coding assistant built around a single CrewAI coding agent that turns a requested Python program into files in a constrained workspace.',
+  coderDetails: 'The agent can use bounded Serper or DDGS technical research and sandbox tools; generated programs run in network-disabled Docker containers. YAML configuration, resumable sessions, deterministic validation, and per-call Gemini, Groq, and OpenRouter fallback keep the workflow recoverable.',
+  engineeringDescription: 'A command-line software-delivery pipeline with four CrewAI agents: an engineering lead, backend engineer, frontend engineer, and test engineer.',
+  engineeringDetails: 'The lead can research with Serper or DDGS, then routes requirements through Python backend, Gradio 6 frontend, and test stages. Docker acceptance checks, YAML configuration, resumable stages, sandbox boundaries, and Gemini, Groq, and OpenRouter fallback make generated applications testable and recoverable.',
+  twinDescription: 'A profile-grounded conversational assistant that answers questions about experience, skills, and projects through a controlled tool-calling loop.',
+  twinDetails: 'Python and Gradio assemble curated profile facts and PDF context for a single response agent using the OpenAI SDK with Gemini-to-Groq fallback. Contact and unknown-question tools use SMTP and optional Pushover notifications without persisting visitor data locally.',
+  researchDescription: 'A multi-stage research system with a Planner Agent and Writer Agent that turns a question into a sourced report.',
+  researchDetails: 'The Planner Agent produces Pydantic-validated search queries; Python executes them concurrently through Serper, Google Custom Search, and DDGS fallback. The Writer Agent synthesizes the evidence through the OpenAI Agents SDK, while deterministic post-processing selects five unique source links; Gemini, Groq, and OpenRouter provide model fallback.',
+  debateDescription: 'A two-agent CrewAI debate system in which a Debate Agent develops proposition and opposition arguments and a Judge Agent returns an impartial decision.',
+  debateDetails: 'The Gradio 6 interface and YAML tasks run sequentially; the Debate Agent can use bounded Serper or DDGS evidence, then the Judge Agent receives the completed arguments. Per-call Gemini, Groq, and OpenRouter fallback preserves completed task context when a provider fails.',
+  financialDescription: 'A two-agent CrewAI financial-research workflow: a Research Agent gathers current company evidence and an Analyst Agent turns it into a Markdown report.',
+  financialDetails: 'The Gradio 6 and CLI interfaces route a company through Serper-backed research, sequential YAML tasks, and analysis. Python, CrewAI, Gemini, Groq, and OpenRouter fallback preserve completed research when a model provider fails.',
+  stockDescription: 'A three-agent CrewAI market-research workflow with a Trending Company Finder, Financial Researcher, and Stock Picker.',
+  stockDetails: 'The Gradio 6 and CLI interfaces take a sector, use bounded Serper searches, and pass Pydantic-validated company lists through sequential YAML tasks to a final candidate selection. Gemini, Groq, and OpenRouter fallback detects malformed or repetitive output without restarting completed work.'
+});
+
+Object.assign(translations.es, {
+  operationsDescription: 'Sistema auditable de triage operativo que convierte solicitudes desestructuradas de acceso, facturación y soporte técnico en casos documentados.',
+  operationsDetails: 'Una base determinista en JavaScript valida la entrada, recupera un procedimiento controlado, aplica la política de revisión humana y registra una auditoría. Un workflow opcional de n8n suma un clasificador Gemini con validación de salida estructurada y conserva el fallback determinista si la IA falla o devuelve datos inválidos.',
+  coderDescription: 'Asistente de programación por línea de comandos construido alrededor de un único agente de código de CrewAI, que transforma un pedido de Python en archivos dentro de un workspace restringido.',
+  coderDetails: 'El agente puede usar investigación técnica acotada con Serper o DDGS y herramientas de sandbox; los programas generados se ejecutan en contenedores Docker sin red. La configuración YAML, sesiones reanudables, validación determinista y fallback por llamada entre Gemini, Groq y OpenRouter mantienen el flujo recuperable.',
+  engineeringDescription: 'Pipeline de entrega de software por línea de comandos con cuatro agentes CrewAI: líder de ingeniería, ingeniero backend, ingeniero frontend e ingeniero de pruebas.',
+  engineeringDetails: 'El líder puede investigar con Serper o DDGS y luego enruta requisitos por etapas de backend Python, frontend Gradio 6 y testing. Las comprobaciones de aceptación en Docker, la configuración YAML, etapas reanudables, límites de sandbox y fallback entre Gemini, Groq y OpenRouter hacen verificables y recuperables las aplicaciones generadas.',
+  twinDescription: 'Asistente conversacional fundamentado en el perfil profesional, que responde sobre experiencia, habilidades y proyectos mediante un ciclo controlado de herramientas.',
+  twinDetails: 'Python y Gradio reúnen hechos profesionales curados y contexto PDF para un único agente de respuesta que usa el SDK de OpenAI con fallback de Gemini a Groq. Las herramientas de contacto y preguntas sin respuesta usan SMTP y notificaciones Pushover opcionales sin persistir localmente los datos de visitantes.',
+  researchDescription: 'Sistema de investigación por etapas con un Agente Planificador y un Agente Redactor que transforma una pregunta en un informe con fuentes.',
+  researchDetails: 'El Agente Planificador produce consultas validadas con Pydantic; Python las ejecuta en paralelo mediante Serper, Google Custom Search y fallback a DDGS. El Agente Redactor sintetiza la evidencia con OpenAI Agents SDK, mientras un posprocesamiento determinista selecciona cinco enlaces únicos; Gemini, Groq y OpenRouter aportan fallback de modelos.',
+  debateDescription: 'Sistema de debate CrewAI de dos agentes: un Agente de Debate desarrolla argumentos de proposición y oposición, y un Agente Juez entrega una decisión imparcial.',
+  debateDetails: 'La interfaz Gradio 6 y las tareas YAML se ejecutan secuencialmente; el Agente de Debate puede usar evidencia acotada de Serper o DDGS y luego el Agente Juez recibe los argumentos completos. El fallback por llamada entre Gemini, Groq y OpenRouter conserva el contexto de tareas terminadas ante fallas de proveedor.',
+  financialDescription: 'Flujo de investigación financiera CrewAI de dos agentes: un Agente Investigador reúne evidencia actual de empresas y un Agente Analista la convierte en un informe Markdown.',
+  financialDetails: 'Las interfaces Gradio 6 y CLI procesan una empresa mediante investigación respaldada por Serper, tareas YAML secuenciales y análisis. Python, CrewAI y el fallback entre Gemini, Groq y OpenRouter preservan la investigación completada si falla un proveedor de modelos.',
+  stockDescription: 'Flujo de investigación de mercado CrewAI de tres agentes: Buscador de Empresas en Tendencia, Investigador Financiero y Selector de Acciones.',
+  stockDetails: 'Las interfaces Gradio 6 y CLI reciben un sector, usan búsquedas Serper acotadas y pasan listas de empresas validadas con Pydantic por tareas YAML secuenciales hasta seleccionar un candidato final. El fallback entre Gemini, Groq y OpenRouter detecta salidas malformadas o repetitivas sin reiniciar trabajo completado.'
+});
+
 const languageSelector = document.querySelector('#language-selector');
 const menuButton = document.querySelector('.menu-toggle');
 const navigation = document.querySelector('.site-nav');
