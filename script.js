@@ -55,6 +55,28 @@ Object.assign(translations.es, {
   contactText: 'Para colaboraciones en automatización con IA, operaciones técnicas, monitoreo, QA o sistemas de información, podés explorar mi trabajo público en GitHub.'
 });
 
+Object.assign(translations.en, {
+  greenhouseKind: 'IoT automation and technical operations · In progress',
+  greenhouseTitle: 'IoT Automation & Monitoring',
+  greenhouseDescription: 'An IoT-based environmental monitoring and operational automation system. It brings together sensors, cameras, pumps, connected devices, dashboards, time-series data, and Telegram alerts to make conditions and daily work observable.',
+  greenhouseDetails: 'Home Assistant and OpenClaw coordinate device automation, while Python and SQL workflows collect telemetry, validate data quality, and support reporting. Linux services and Docker deployments provide maintainable infrastructure; connectivity and hardware integration are treated as part of ongoing operations.',
+  greenhouseAreas: 'IoT, environmental monitoring, and technical operations',
+  monitorLabel: 'Conceptual IoT monitoring example',
+  monitorState: 'IOT / STATUS',
+  iotScreenshotCaption: 'Case analysis interface'
+});
+
+Object.assign(translations.es, {
+  greenhouseKind: 'Automatización IoT y operaciones técnicas · En curso',
+  greenhouseTitle: 'Automatización y monitoreo IoT',
+  greenhouseDescription: 'Sistema de monitoreo ambiental y automatización operativa basado en IoT. Integra sensores, cámaras, bombas, dispositivos conectados, tableros, datos de series temporales y alertas por Telegram para hacer observables las condiciones y el trabajo cotidiano.',
+  greenhouseDetails: 'Home Assistant y OpenClaw coordinan la automatización de dispositivos, mientras flujos en Python y SQL recolectan telemetría, validan la calidad de los datos y respaldan los reportes. Servicios Linux y despliegues Docker aportan infraestructura mantenible; la conectividad y la integración de hardware forman parte de la operación continua.',
+  greenhouseAreas: 'IoT, monitoreo ambiental y operaciones técnicas',
+  monitorLabel: 'Ejemplo conceptual de monitoreo IoT',
+  monitorState: 'IOT / ESTADO',
+  iotScreenshotCaption: 'Interfaz de análisis de caso'
+});
+
 Object.assign(translations.en, { themeToggleLabel: 'Change color theme', themeToDark: 'Dark mode', themeToLight: 'Light mode' });
 Object.assign(translations.es, { themeToggleLabel: 'Cambiar tema de color', themeToDark: 'Modo oscuro', themeToLight: 'Modo claro' });
 Object.assign(translations.en, { viewRepository: 'View repository ↗', repositoryLinkTitle: 'Open source repository', portfolioRepository: 'Portfolio source ↗' });

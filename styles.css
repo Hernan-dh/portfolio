@@ -155,6 +155,7 @@ footer { padding-inline: var(--gutter); }
 .repo-panel a { align-self: flex-start; padding: 13px 16px; background: var(--acid); color: var(--ink); font-size: 10px; text-decoration: none; text-transform: uppercase; }
 .project-screenshot { min-width: 0; min-height: 500px; display: flex; flex-direction: column; margin: 0; padding: 12px; background: var(--surface-strong); }
 .project-screenshot img { width: 100%; min-height: 0; flex: 1; object-fit: cover; object-position: center; background: white; }
+.project-screenshot .monitor { min-height: 0; flex: 1; }
 .project-screenshot figcaption { min-height: 38px; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 10px 5px 0; color: #d9ddd7; font: 500 8px var(--mono); letter-spacing: .05em; text-transform: uppercase; }
 .project-screenshot a { color: var(--acid); text-underline-offset: 4px; }
 
@@ -224,6 +225,7 @@ footer { min-height: 100px; display: flex; align-items: center; justify-content:
   .agent-embed iframe { min-height: 570px; }
   .project-screenshot { min-height: 0; padding: 9px; }
   .project-screenshot img { aspect-ratio: 1.55; flex: none; }
+  .project-screenshot .monitor { min-height: 360px; }
   .project-screenshot figcaption { font-size: 7px; }
   .embed-header { font-size: 7px; }
   .embed-header span { display: none; }
