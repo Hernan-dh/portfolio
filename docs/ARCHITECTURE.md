@@ -18,6 +18,8 @@ There is no backend, database, build step, or local runtime dependency. Google F
 
 Repository publication is handled separately by the dependency-free `scripts/publish.py`. It sends a bounded change context to Gemini or Groq to propose commit metadata before explicit human confirmation.
 
+AI Operations Desk is presented as a static, versioned screenshot with an isolated GitHub repository link. It is not embedded because its optional n8n integration is intentionally kept private.
+
 ## Localization
 
 English is the source and fallback language. On first load, `script.js` selects Spanish when the browser language starts with `es`; every other browser language receives English. Visitors can override that choice from the header, and the selection is stored locally for future visits. The embedded agents manage their languages independently.
