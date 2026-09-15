@@ -20,7 +20,7 @@ const translations = {
 Object.assign(translations.en, {
   metaDescription: "Hernán de Haro's portfolio: AI automation, technical operations, IoT monitoring, infrastructure, QA, and information systems.",
   introRole: 'Automation and technical operations.',
-  introText: 'I design practical automation and reliable operational systems with Python, n8n, MCP, Docker, Linux, and IoT. This portfolio brings together AI workflows, monitoring tools, and the quality and information practices behind them.',
+  introText: 'I design practical automation, agentic workflows, and reliable operational systems with Python, LangGraph, n8n, MCP, Docker, Linux, and IoT. This portfolio brings together AI agents, monitoring tools, and the quality and information practices behind them.',
   projectsIntro: 'Selected work in automation, technical operations, research systems, and IoT monitoring.',
   profileTitle: 'Systems, operations, and information',
   profileOne: 'I combine experience in information science, metadata, technical writing, QA, testing, business development, and small-studio operations.',
@@ -39,7 +39,7 @@ Object.assign(translations.en, {
 Object.assign(translations.es, {
   metaDescription: 'Portfolio de Hernán de Haro: automatización con IA, operaciones técnicas, monitoreo IoT, infraestructura, QA y sistemas de información.',
   introRole: 'Automatización y operaciones técnicas.',
-  introText: 'Diseño automatizaciones prácticas y sistemas operativos confiables con Python, n8n, MCP, Docker, Linux e IoT. Este portfolio reúne flujos de IA, herramientas de monitoreo y las prácticas de calidad e información que los sostienen.',
+  introText: 'Diseño automatizaciones prácticas, workflows agénticos y sistemas operativos confiables con Python, LangGraph, n8n, MCP, Docker, Linux e IoT. Este portfolio reúne agentes de IA, herramientas de monitoreo y las prácticas de calidad e información que los sostienen.',
   projectsIntro: 'Trabajo seleccionado en automatización, operaciones técnicas, sistemas de investigación y monitoreo IoT.',
   profileTitle: 'Sistemas, operaciones e información',
   profileOne: 'Combino experiencia en ciencias de la información, metadatos, escritura técnica, QA, testing, desarrollo de negocios y operaciones de estudios pequeños.',
