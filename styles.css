@@ -110,7 +110,11 @@ footer { padding-inline: var(--gutter); }
 .project-description > p,
 .profile-copy p,
 .contact-content p { text-align: justify; text-justify: inter-word; hyphens: none; }
-.location { margin-top: 38px; font: 400 9px var(--mono); letter-spacing: .08em; text-transform: uppercase; }
+.skills-rotator { display: flex; flex-wrap: wrap; gap: 10px; align-items: baseline; margin: 27px 0 0; font: 500 10px var(--mono); letter-spacing: .1em; text-transform: uppercase; }
+.skills-rotator > span:first-child { color: var(--muted); }
+.skills-rotator-value { color: var(--orange); transition: opacity .2s ease, transform .2s ease; }
+.skills-rotator-value.is-changing { opacity: 0; transform: translateY(4px); }
+.location { margin-top: 22px; font: 400 9px var(--mono); letter-spacing: .08em; text-transform: uppercase; }
 
 .intro-visual { position: relative; width: 100%; max-width: 590px; aspect-ratio: 1; justify-self: end; display: grid; place-items: center; border: 1px solid var(--visual-line); border-radius: 50%; }
 .intro-visual::before,
