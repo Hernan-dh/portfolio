@@ -110,10 +110,14 @@ footer { padding-inline: var(--gutter); }
 .project-description > p,
 .profile-copy p,
 .contact-content p { text-align: justify; text-justify: inter-word; hyphens: none; }
-.skills-rotator { display: flex; flex-wrap: wrap; gap: 10px; align-items: baseline; margin: 27px 0 0; font: 500 10px var(--mono); letter-spacing: .1em; text-transform: uppercase; }
-.skills-rotator > span:first-child { color: var(--muted); }
-.skills-rotator-value { color: var(--orange); transition: opacity .2s ease, transform .2s ease; }
-.skills-rotator-value.is-changing { opacity: 0; transform: translateY(4px); }
+.skills-carousel { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 16px; align-items: center; max-width: 680px; margin: 27px 0 0; font: 500 10px var(--mono); letter-spacing: .1em; text-transform: uppercase; }
+.skills-carousel-label { color: var(--muted); }
+.skills-carousel-viewport { min-width: 0; overflow: hidden; mask-image: linear-gradient(to right, transparent, #000 5%, #000 95%, transparent); }
+.skills-carousel-track { display: flex; width: max-content; animation: skills-scroll 115s linear infinite; }
+.skills-carousel-group { display: flex; align-items: center; gap: 20px; padding-right: 20px; white-space: nowrap; }
+.skills-carousel-skill { color: var(--orange); }
+.skills-carousel-skill::after { content: "/"; margin-left: 20px; color: var(--muted); }
+@keyframes skills-scroll { to { transform: translateX(-50%); } }
 .location { margin-top: 22px; font: 400 9px var(--mono); letter-spacing: .08em; text-transform: uppercase; }
 
 .intro-visual { position: relative; width: 100%; max-width: 590px; aspect-ratio: 1; justify-self: end; display: grid; place-items: center; border: 1px solid var(--visual-line); border-radius: 50%; }
@@ -217,6 +221,7 @@ footer { min-height: 100px; display: flex; align-items: center; justify-content:
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .js .reveal { opacity: 1; transform: none; }
+  .skills-carousel-viewport { overflow-x: auto; mask-image: none; }
 }
 
 @media (max-width: 980px) {
@@ -240,6 +245,7 @@ footer { min-height: 100px; display: flex; align-items: center; justify-content:
   .intro { padding-top: 115px; }
   .intro h1 { font-size: clamp(50px, 16vw, 68px); }
   .intro-role { font-size: 25px; }
+  .skills-carousel { gap: 11px; font-size: 9px; }
   .intro-visual { width: 106%; margin-left: -3%; }
   .section-header { margin-bottom: 50px; }
   .project-heading { grid-template-columns: 42px 1fr; padding: 24px 20px; }

@@ -148,6 +148,7 @@ Object.assign(translations.es, {
 
 Object.assign(translations.en, {
   skillsLabel: 'Focus',
+  skillsCarouselLabel: 'Areas and technologies',
   visualAutomation: 'AI AUTOMATION',
   visualOperations: 'TECH OPS',
   visualIot: 'IOT MONITORING',
@@ -156,6 +157,7 @@ Object.assign(translations.en, {
 
 Object.assign(translations.es, {
   skillsLabel: 'Enfoque',
+  skillsCarouselLabel: 'Áreas y tecnologías',
   visualAutomation: 'AUTOMATIZACIÓN IA',
   visualOperations: 'OPS TÉCNICAS',
   visualIot: 'MONITOREO IOT',
@@ -168,7 +170,7 @@ const navigation = document.querySelector('.site-nav');
 const revealElements = document.querySelectorAll('.reveal');
 const themeToggle = document.querySelector('#theme-toggle');
 const themeLabel = document.querySelector('#theme-label');
-const skillsRotatorValue = document.querySelector('#skills-rotator-value');
+const skillsCarouselTrack = document.querySelector('#skills-carousel-track');
 
 const rotatingSkills = [
   'Automation', 'Python', 'AI Agents', 'Technical Operations', 'Workflow Automation', 'AI Automation',
@@ -249,19 +251,20 @@ setTheme(currentTheme);
 languageSelector?.addEventListener('change', (event) => setLanguage(event.target.value, true));
 themeToggle?.addEventListener('click', () => setTheme(currentTheme === 'dark' ? 'light' : 'dark', true));
 
-if (skillsRotatorValue && typeof window.setInterval === 'function') {
-  const reduceMotion = typeof window.matchMedia === 'function' && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  let skillIndex = 0;
-  if (!reduceMotion) {
-    window.setInterval(() => {
-      skillsRotatorValue.classList.add('is-changing');
-      window.setTimeout(() => {
-        skillIndex = (skillIndex + 1) % rotatingSkills.length;
-        skillsRotatorValue.textContent = rotatingSkills[skillIndex];
-        skillsRotatorValue.classList.remove('is-changing');
-      }, 200);
-    }, 2800);
-  }
+if (skillsCarouselTrack && typeof document.createElement === 'function') {
+  const createSkillGroup = (isDuplicate = false) => {
+    const group = document.createElement('div');
+    group.className = 'skills-carousel-group';
+    if (isDuplicate) group.setAttribute('aria-hidden', 'true');
+    rotatingSkills.forEach((skill) => {
+      const item = document.createElement('span');
+      item.className = 'skills-carousel-skill';
+      item.textContent = skill;
+      group.append(item);
+    });
+    return group;
+  };
+  skillsCarouselTrack.append(createSkillGroup(), createSkillGroup(true));
 }
 
 function closeMenu() {
