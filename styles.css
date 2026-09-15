@@ -113,7 +113,7 @@ footer { padding-inline: var(--gutter); }
 .skills-carousel { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 16px; align-items: center; max-width: 680px; margin: 27px 0 0; font: 500 10px var(--mono); letter-spacing: .1em; text-transform: uppercase; }
 .skills-carousel-label { color: var(--muted); }
 .skills-carousel-viewport { min-width: 0; overflow: hidden; mask-image: linear-gradient(to right, transparent, #000 5%, #000 95%, transparent); }
-.skills-carousel-track { display: flex; width: max-content; animation: skills-scroll 150s linear infinite; }
+.skills-carousel-track { display: flex; width: max-content; animation: skills-scroll 210s linear infinite; }
 .skills-carousel-group { display: flex; align-items: center; gap: 20px; padding-right: 20px; white-space: nowrap; }
 .skills-carousel-skill { color: var(--orange); }
 .skills-carousel-skill::after { content: "/"; margin-left: 20px; color: var(--muted); }
