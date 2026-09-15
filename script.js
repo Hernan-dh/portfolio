@@ -85,6 +85,30 @@ Object.assign(translations.en, { viewRepository: 'View repository ↗', reposito
 Object.assign(translations.es, { viewRepository: 'Ver repositorio ↗', repositoryLinkTitle: 'Abrir repositorio fuente', portfolioRepository: 'Código fuente del portfolio ↗' });
 
 Object.assign(translations.en, {
+  sidekickKind: 'Agentic AI · 2026',
+  sidekickDescription: 'A personal AI coworker that plans tasks, uses web and sandbox tools, and keeps people in control of sensitive actions.',
+  sidekickDetails: 'LangChain agents compiled as a LangGraph coordinate a worker and a structured evaluator behind a Gradio interface. Persistent Playwright and filesystem MCP sessions support browser and sandbox work; approval checkpoints, PII filtering, LangSmith tracing, and Gemini, Groq, and OpenRouter fallback make execution observable and recoverable.',
+  sidekickRole: 'Design, development, and documentation',
+  sidekickStatus: 'Public repository',
+  sidekickScreenshotAlt: 'Sidekick AI coworker interface with chat and live task plan',
+  sidekickScreenshotCaption: 'AI coworker interface',
+  sidekickRepoLabel: 'View repository ↗',
+  sidekickRepoTitle: 'Sidekick source repository'
+});
+
+Object.assign(translations.es, {
+  sidekickKind: 'IA agéntica · 2026',
+  sidekickDescription: 'Compañero de trabajo personal con IA que planifica tareas, usa herramientas web y de sandbox, y mantiene el control humano sobre las acciones sensibles.',
+  sidekickDetails: 'Agentes LangChain compilados como un LangGraph coordinan un trabajador y un evaluador estructurado detrás de una interfaz Gradio. Sesiones MCP persistentes de Playwright y sistema de archivos permiten trabajar con el navegador y el sandbox; checkpoints de aprobación, filtrado de datos personales, trazabilidad con LangSmith y fallback entre Gemini, Groq y OpenRouter hacen que la ejecución sea observable y recuperable.',
+  sidekickRole: 'Diseño, desarrollo y documentación',
+  sidekickStatus: 'Repositorio público',
+  sidekickScreenshotAlt: 'Interfaz del compañero de trabajo con IA Sidekick, con chat y plan de tareas en vivo',
+  sidekickScreenshotCaption: 'Interfaz del compañero de IA',
+  sidekickRepoLabel: 'Ver repositorio ↗',
+  sidekickRepoTitle: 'Repositorio fuente de Sidekick'
+});
+
+Object.assign(translations.en, {
   operationsDescription: 'An auditable n8n-orchestrated operations-triage system that turns unstructured access, billing, and technical requests into documented cases.',
   operationsDetails: 'The primary n8n workflow validates input, retrieves a controlled procedure, enforces human-review policy, and can enrich classification with Gemini through structured-output validation. A JavaScript deterministic engine remains a recoverable browser fallback when the webhook or AI output is unavailable or invalid.',
   coderDescription: 'A command-line coding assistant built around a single CrewAI coding agent that turns a requested Python program into files in a constrained workspace.',

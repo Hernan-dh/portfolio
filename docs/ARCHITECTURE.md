@@ -18,7 +18,7 @@ There is no backend, database, build step, or local runtime dependency. Google F
 
 Repository publication is handled separately by the dependency-free `scripts/publish.py`. It sends a bounded change context to Gemini or Groq to propose commit metadata before explicit human confirmation.
 
-AI Operations Desk is presented as a static, versioned screenshot with an isolated GitHub repository link. It is not embedded because its optional n8n integration is intentionally kept private.
+AI Operations Desk and Sidekick are presented as static, versioned screenshots with isolated GitHub repository links. AI Operations Desk is not embedded because its optional n8n integration is intentionally kept private; Sidekick is documented as a public source project without exposing a hosted runtime from the portfolio.
 
 ## Localization
 
