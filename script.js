@@ -114,7 +114,9 @@ Object.assign(translations.en, {
   ticketingDetails: 'React renders catalog and checkout flows, while PixiJS and an observable Backbone model power seat selection. A Node/Express API enforces holds, authorization, issuance, and check-in; Grails owns the catalog, and MySQL and Redis support transactional persistence and request limiting. Docker Compose, Playwright, API tests, and concurrency tests validate the full stack.',
   ticketingRole: 'Design, development, and documentation',
   ticketingStatus: 'Public repository',
-  ticketingOnline: 'Ticketing / GitHub',
+  ticketingOnline: 'Ticketing / online',
+  ticketingDemoLabel: 'Open project ↗',
+  ticketingDemoTitle: 'Open Ticketing project',
   ticketingRepoLabel: 'View repository ↗',
   ticketingRepoTitle: 'Ticketing source repository'
 });
@@ -125,7 +127,9 @@ Object.assign(translations.es, {
   ticketingDetails: 'React renderiza el catálogo y el checkout, mientras PixiJS y un modelo observable de Backbone gestionan la selección de asientos. Una API Node/Express aplica reservas, autorización, emisión y check-in; Grails gestiona el catálogo, y MySQL y Redis aportan persistencia transaccional y limitación de solicitudes. Docker Compose, Playwright, pruebas de API y de concurrencia validan el stack completo.',
   ticketingRole: 'Diseño, desarrollo y documentación',
   ticketingStatus: 'Repositorio público',
-  ticketingOnline: 'Ticketing / GitHub',
+  ticketingOnline: 'Ticketing / en línea',
+  ticketingDemoLabel: 'Abrir proyecto ↗',
+  ticketingDemoTitle: 'Abrir proyecto Ticketing',
   ticketingRepoLabel: 'Ver repositorio ↗',
   ticketingRepoTitle: 'Repositorio fuente de Ticketing'
 });
