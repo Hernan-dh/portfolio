@@ -109,6 +109,28 @@ Object.assign(translations.es, {
 });
 
 Object.assign(translations.en, {
+  ticketingKind: 'Full-stack systems · 2026',
+  ticketingDescription: 'A bilingual event-ticketing MVP with configurable branding, seat maps, five-minute reservations, QR issuance, and online single-use admission validation.',
+  ticketingDetails: 'React renders catalog and checkout flows, while PixiJS and an observable Backbone model power seat selection. A Node/Express API enforces holds, authorization, issuance, and check-in; Grails owns the catalog, and MySQL and Redis support transactional persistence and request limiting. Docker Compose, Playwright, API tests, and concurrency tests validate the full stack.',
+  ticketingRole: 'Design, development, and documentation',
+  ticketingStatus: 'Public repository',
+  ticketingOnline: 'Ticketing / GitHub',
+  ticketingRepoLabel: 'View repository ↗',
+  ticketingRepoTitle: 'Ticketing source repository'
+});
+
+Object.assign(translations.es, {
+  ticketingKind: 'Sistemas full-stack · 2026',
+  ticketingDescription: 'MVP bilingüe de ticketing para eventos con identidad visual configurable, mapas de asientos, reservas de cinco minutos, emisión de QR y validación de acceso online de un único uso.',
+  ticketingDetails: 'React renderiza el catálogo y el checkout, mientras PixiJS y un modelo observable de Backbone gestionan la selección de asientos. Una API Node/Express aplica reservas, autorización, emisión y check-in; Grails gestiona el catálogo, y MySQL y Redis aportan persistencia transaccional y limitación de solicitudes. Docker Compose, Playwright, pruebas de API y de concurrencia validan el stack completo.',
+  ticketingRole: 'Diseño, desarrollo y documentación',
+  ticketingStatus: 'Repositorio público',
+  ticketingOnline: 'Ticketing / GitHub',
+  ticketingRepoLabel: 'Ver repositorio ↗',
+  ticketingRepoTitle: 'Repositorio fuente de Ticketing'
+});
+
+Object.assign(translations.en, {
   operationsDescription: 'An auditable n8n-orchestrated operations-triage system that turns unstructured access, billing, and technical requests into documented cases.',
   operationsDetails: 'The primary n8n workflow validates input, retrieves a controlled procedure, enforces human-review policy, and can enrich classification with Gemini through structured-output validation. A JavaScript deterministic engine remains a recoverable browser fallback when the webhook or AI output is unavailable or invalid.',
   coderDescription: 'A command-line coding assistant built around a single CrewAI coding agent that turns a requested Python program into files in a constrained workspace.',
