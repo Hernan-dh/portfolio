@@ -9,7 +9,7 @@ window.portfolioSkills = [
   'Git', 'GitHub', 'Docker Compose', 'Cloud Deployment', 'DevOps', 'CI/CD', 'GitHub Actions', 'Observability',
   'Logging', 'Alerting', 'Reliability Engineering', 'Incident Management', 'Operational Monitoring',
   'Infrastructure Monitoring', 'Runbooks', 'Troubleshooting', 'Root Cause Analysis', 'System Administration',
-  'Secrets Management', 'Environment Variables', 'Self-Hosted Software', 'Reverse Proxy', 'Home Assistant',
+  'Secrets Management', 'Environment Variables', 'Self-Hosted Software', 'Home Assistant',
   'MQTT', 'Sensors', 'Automation Systems', 'Time-Series Data', 'Dashboard Design',
   'Data Pipelines', 'Data Processing', 'ETL', 'Data Analysis', 'Data Quality', 'Data Validation',
   'Data Visualization', 'Data Documentation', 'Information Science', 'Information Architecture',
@@ -19,5 +19,6 @@ window.portfolioSkills = [
   'API Testing', 'Unit Testing', 'Acceptance Testing', 'Process Improvement', 'Requirements Analysis',
   'Business Analysis', 'Stakeholder Communication', 'Project Management', 'Telegram Bot Development',
   'Web Application Development', 'Gradio', 'Gemini', 'Groq', 'OpenRouter', 'HTML', 'CSS', 'JavaScript',
-  'Responsive Web Design', 'Game Studio Operations', 'Video Game Industry'
+  'Responsive Web Design', 'MySQL', 'Node.js', 'React', 'Express.js', 'Redis', 'Database Design', 'Privacy by Design',
+   'Data Encryption', 'Integration Testing', 'Caddy', 'Reverse Proxy', 'Game Studio Operations', 'Video Game Industry'
 ];

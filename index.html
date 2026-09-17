@@ -246,8 +246,8 @@
         <div class="project-heading"><p class="project-number">04</p><div><p class="project-kind" data-i18n="ticketingKind">Full-stack systems · 2026</p><h3>Event Ticketing &amp; Access Control</h3></div></div>
         <div class="project-body">
           <div class="project-description">
-            <p data-i18n="ticketingDescription">A bilingual event-ticketing MVP with configurable branding, seat maps, five-minute reservations, QR issuance, and online single-use admission validation.</p>
-            <p data-i18n="ticketingDetails">React renders catalog and checkout flows, while PixiJS and an observable Backbone model power seat selection. A Node/Express API enforces holds, authorization, issuance, and check-in; Grails owns the catalog, and MySQL and Redis support transactional persistence and request limiting. Docker Compose, Playwright, API tests, and concurrency tests validate the full stack.</p>
+            <p data-i18n="ticketingDescription">A bilingual event-ticketing platform with seat maps, short-lived reservations, transactional checkout, signed QR issuance, and online single-use admission validation.</p>
+            <p data-i18n="ticketingDetails">React, PixiJS, and Backbone support the sales experience. Node/Express coordinates a normalized MySQL transaction model for customers, orders, payments, and issued tickets; Grails owns the catalog and Redis limits requests. PrivacyCore-inspired controls minimize data, encrypt customer contact and profile data with AES-256-GCM, use HMAC-derived pseudonyms, and audit authorized reveals. Docker Compose, unit/API tests, Playwright E2E, isolated MySQL/Redis/Grails integration tests, and production smoke tests validate the stack.</p>
             <dl class="project-facts">
               <div><dt data-i18n="roleLabel">Role</dt><dd data-i18n="ticketingRole">Design, development, and documentation</dd></div>
               <div><dt data-i18n="technologiesLabel">Technologies</dt><dd>React, PixiJS, Backbone, Node.js, Express, Grails, MySQL, Redis, Docker Compose, Playwright</dd></div>

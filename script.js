@@ -110,8 +110,8 @@ Object.assign(translations.es, {
 
 Object.assign(translations.en, {
   ticketingKind: 'Full-stack systems · 2026',
-  ticketingDescription: 'A bilingual event-ticketing MVP with configurable branding, seat maps, five-minute reservations, QR issuance, and online single-use admission validation.',
-  ticketingDetails: 'React renders catalog and checkout flows, while PixiJS and an observable Backbone model power seat selection. A Node/Express API enforces holds, authorization, issuance, and check-in; Grails owns the catalog, and MySQL and Redis support transactional persistence and request limiting. Docker Compose, Playwright, API tests, and concurrency tests validate the full stack.',
+  ticketingDescription: 'A bilingual event-ticketing platform with seat maps, short-lived reservations, transactional checkout, signed QR issuance, and online single-use admission validation.',
+  ticketingDetails: 'React, PixiJS, and Backbone support the sales experience. Node/Express coordinates a normalized MySQL transaction model for customers, orders, payments, and issued tickets; Grails owns the catalog and Redis limits requests. PrivacyCore-inspired controls minimize data, encrypt customer contact and profile data with AES-256-GCM, use HMAC-derived pseudonyms, and audit authorized reveals. Docker Compose, unit/API tests, Playwright E2E, isolated MySQL/Redis/Grails integration tests, and production smoke tests validate the stack.',
   ticketingRole: 'Design, development, and documentation',
   ticketingStatus: 'Public repository',
   ticketingOnline: 'Ticketing / online',
@@ -123,8 +123,8 @@ Object.assign(translations.en, {
 
 Object.assign(translations.es, {
   ticketingKind: 'Sistemas full-stack · 2026',
-  ticketingDescription: 'MVP bilingüe de ticketing para eventos con identidad visual configurable, mapas de asientos, reservas de cinco minutos, emisión de QR y validación de acceso online de un único uso.',
-  ticketingDetails: 'React renderiza el catálogo y el checkout, mientras PixiJS y un modelo observable de Backbone gestionan la selección de asientos. Una API Node/Express aplica reservas, autorización, emisión y check-in; Grails gestiona el catálogo, y MySQL y Redis aportan persistencia transaccional y limitación de solicitudes. Docker Compose, Playwright, pruebas de API y de concurrencia validan el stack completo.',
+  ticketingDescription: 'Plataforma bilingüe de ticketing para eventos con mapas de asientos, reservas de corta duración, checkout transaccional, emisión de QR firmados y validación de acceso online de un único uso.',
+  ticketingDetails: 'React, PixiJS y Backbone sostienen la experiencia de venta. Node/Express coordina un modelo transaccional MySQL normalizado para clientes, órdenes, pagos y tickets emitidos; Grails gestiona el catálogo y Redis limita solicitudes. Los controles inspirados en PrivacyCore minimizan datos, cifran contactos y perfiles de clientes con AES-256-GCM, usan seudónimos derivados por HMAC y auditan las revelaciones autorizadas. Docker Compose, pruebas unitarias/API, E2E con Playwright, integración aislada con MySQL/Redis/Grails y smoke tests de producción validan el stack.',
   ticketingRole: 'Diseño, desarrollo y documentación',
   ticketingStatus: 'Repositorio público',
   ticketingOnline: 'Ticketing / en línea',
