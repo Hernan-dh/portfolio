@@ -58,11 +58,12 @@ python scripts/publish.py --title "feat: describe change" --description "Summary
 
 The portfolio is served as static files behind Caddy. Five embedded demos are
 mounted beneath the same HTTPS origin at `/twin`, `/research`, `/debate`,
-`/financial`, and `/stocks`; AI Operations Desk and Event Ticketing & Access
-Control are embedded from their own HTTPS hosts. Deploy the static portfolio
-and the demo route configuration together, then verify each fullscreen link
-and iframe. No server address, credentials, or provider-specific infrastructure
-belongs in this public repository.
+`/financial`, and `/stocks`. AI Operations Desk and Event Ticketing & Access
+Control are linked as separate applications because their hosts block iframe
+embedding. Deploy the static portfolio and the demo route configuration
+together, then verify each fullscreen link and iframe. No server address,
+credentials, or provider-specific infrastructure belongs in this public
+repository.
 
 ## Public-source verification
 
