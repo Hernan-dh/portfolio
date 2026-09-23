@@ -31,7 +31,7 @@ The header also lets visitors choose a light or dark theme. The preference is st
 ## Trust boundaries
 
 - The portfolio does not receive or persist visitor data.
-- Embedded conversations belong to Agentic Twin, Deep Research, AI Debate, Financial Researcher, and Stock Picker and run on Render.
+- Embedded conversations belong to Agentic Twin, Deep Research, AI Debate, Financial Researcher, and Stock Picker. They are reached through same-origin HTTPS paths managed by the deployment reverse proxy.
 - The iframe only receives clipboard-write permission.
 - External links isolate the originating window.
 - Publishing provider keys remain in the local environment and are never included in change context or diagnostic output.

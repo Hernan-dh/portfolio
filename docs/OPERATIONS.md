@@ -6,7 +6,7 @@
 python -m http.server 4173
 ```
 
-Open `http://localhost:4173`. The embedded agents require an internet connection. Confirm that both Render iframes load and that their fullscreen links open the corresponding service.
+Open `http://localhost:4173`. The embedded agents require an internet connection. Confirm that each iframe loads and that its fullscreen link opens the corresponding service.
 
 Test localization with an English and an `es-*` browser locale. Confirm that the header selector switches all visible copy, metadata, and accessibility labels, and that a manual selection survives a reload.
 
@@ -56,14 +56,12 @@ python scripts/publish.py --title "feat: describe change" --description "Summary
 
 ## Deployment
 
-The portfolio is deployed to GitHub Pages after verification succeeds on a push
-to `main`. The deployment workflow uploads the repository root because the site
-needs no build step.
-
-Before the first deployment, select **GitHub Actions** under **Settings > Pages >
-Build and deployment > Source** in the GitHub repository. Later pushes to `main`
-will deploy automatically. Deployment status and the public URL are available in
-the `github-pages` environment and in the Actions tab.
+The portfolio is served as static files behind Caddy. Its five embedded demos
+are mounted beneath the same HTTPS origin at `/twin`, `/research`, `/debate`,
+`/financial`, and `/stocks`. Deploy the static portfolio and the demo route
+configuration together, then verify each fullscreen link and iframe. No server
+address, credentials, or provider-specific infrastructure belongs in this
+public repository.
 
 ## Public-source verification
 
