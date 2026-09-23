@@ -6,7 +6,7 @@
 python -m http.server 4173
 ```
 
-Open `http://localhost:4173`. The embedded agents and the external AI Operations Desk link require an internet connection. Confirm that each iframe loads, every fullscreen link opens the corresponding service, and the AI Operations Desk project link opens its separate hosted application.
+Open `http://localhost:4173`. The embedded applications require an internet connection. Confirm that every iframe loads and that each repository or fullscreen link opens the corresponding service.
 
 Test localization with an English and an `es-*` browser locale. Confirm that the header selector switches all visible copy, metadata, and accessibility labels, and that a manual selection survives a reload.
 
@@ -56,12 +56,13 @@ python scripts/publish.py --title "feat: describe change" --description "Summary
 
 ## Deployment
 
-The portfolio is served as static files behind Caddy. Its five embedded demos
-are mounted beneath the same HTTPS origin at `/twin`, `/research`, `/debate`,
-`/financial`, and `/stocks`. Deploy the static portfolio and the demo route
-configuration together, then verify each fullscreen link and iframe. No server
-address, credentials, or provider-specific infrastructure belongs in this
-public repository.
+The portfolio is served as static files behind Caddy. Five embedded demos are
+mounted beneath the same HTTPS origin at `/twin`, `/research`, `/debate`,
+`/financial`, and `/stocks`; AI Operations Desk and Event Ticketing & Access
+Control are embedded from their own HTTPS hosts. Deploy the static portfolio
+and the demo route configuration together, then verify each fullscreen link
+and iframe. No server address, credentials, or provider-specific infrastructure
+belongs in this public repository.
 
 ## Public-source verification
 
