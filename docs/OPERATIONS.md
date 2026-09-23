@@ -6,7 +6,7 @@
 python -m http.server 4173
 ```
 
-Open `http://localhost:4173`. The embedded agents require an internet connection. Confirm that each iframe loads and that its fullscreen link opens the corresponding service.
+Open `http://localhost:4173`. The embedded agents and the external AI Operations Desk link require an internet connection. Confirm that each iframe loads, every fullscreen link opens the corresponding service, and the AI Operations Desk project link opens its separate hosted application.
 
 Test localization with an English and an `es-*` browser locale. Confirm that the header selector switches all visible copy, metadata, and accessibility labels, and that a manual selection survives a reload.
 

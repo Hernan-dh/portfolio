@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Static portfolio for Hernán de Haro. It presents his profile and projects and embeds Agentic Twin, Deep Research, AI Debate, Financial Researcher, and Stock Picker as external applications.
+Static portfolio for Hernán de Haro. It presents his profile and projects, embeds Agentic Twin, Deep Research, AI Debate, Financial Researcher, and Stock Picker as external applications, and links to the separately hosted AI Operations Desk.
 
 ## Components
 
@@ -18,7 +18,7 @@ There is no backend, database, build step, or local runtime dependency. Google F
 
 Repository publication is handled separately by the dependency-free `scripts/publish.py`. It sends a bounded change context to Gemini or Groq to propose commit metadata before explicit human confirmation.
 
-AI Operations Desk and Sidekick are presented as static, versioned screenshots with isolated GitHub repository links. AI Operations Desk is not embedded because its optional n8n integration is intentionally kept private; Sidekick is documented as a public source project without exposing a hosted runtime from the portfolio.
+AI Operations Desk and Sidekick are presented as static, versioned screenshots with isolated GitHub repository links. AI Operations Desk also has a separate external project link; it is not embedded because its n8n workflow is a required part of the hosted application. Sidekick is documented as a public source project without exposing a hosted runtime from the portfolio.
 
 ## Localization
 
