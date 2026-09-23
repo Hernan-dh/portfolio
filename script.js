@@ -224,7 +224,10 @@ function setTheme(theme, persist = false) {
 }
 
 function savedLanguage() {
-  try { return localStorage.getItem('portfolio-language'); } catch { return null; }
+  try {
+    const saved = localStorage.getItem('portfolio-language');
+    return saved === 'es' || saved === 'en' ? saved : null;
+  } catch { return null; }
 }
 
 function setLanguage(language, persist = false) {

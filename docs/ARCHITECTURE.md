@@ -39,3 +39,7 @@ The header also lets visitors choose a light or dark theme. The preference is st
 ## Related decisions
 
 - [Dependency-free documentation and publishing](decisions/0001-dependency-free-documentation-and-publishing.md)
+
+## Interface language
+
+The UI preserves an explicit language selection in browser local storage. Without one, `es-*` browser locales use Spanish and every other locale uses English.
