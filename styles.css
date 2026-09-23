@@ -187,6 +187,7 @@ footer { padding-inline: var(--gutter); }
 .project-screenshot img { width: 100%; min-height: 0; flex: 1; object-fit: cover; object-position: top left; background: white; }
 .project-screenshot .monitor { min-height: 0; flex: 1; }
 .project-screenshot figcaption { min-height: 38px; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 10px 5px 0; color: #d9ddd7; font: 500 8px var(--mono); letter-spacing: .05em; text-transform: uppercase; }
+.project-screenshot--caption-top figcaption { padding: 0 5px 10px; }
 .project-screenshot a { color: var(--acid); text-underline-offset: 4px; }
 
 .monitor { min-height: 500px; display: flex; flex-direction: column; padding: clamp(28px, 5vw, 72px); background-color: #b5c9a5; background-image: linear-gradient(rgb(17 20 18 / 7%) 1px, transparent 1px), linear-gradient(90deg, rgb(17 20 18 / 7%) 1px, transparent 1px); background-size: 40px 40px; }
