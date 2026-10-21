@@ -39,6 +39,10 @@ The changelog is rebuilt from conventional commits. ADRs are created as numbered
 
 ## Publishing
 
+Gemini commit metadata rotates through `GEMINI_API_KEY`, `GEMINI_API_KEY_2`,
+`GEMINI_API_KEY_3`, and `GEMINI_API_KEY_4` before the existing OpenRouter and
+Groq fallbacks.
+
 ```bash
 python scripts/publish.py --preview
 python scripts/publish.py
