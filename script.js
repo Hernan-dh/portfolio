@@ -56,6 +56,28 @@ Object.assign(translations.es, {
 });
 
 Object.assign(translations.en, {
+  intelligenceKind: 'AI systems engineering · 2026',
+  intelligenceDescription: 'A local-first knowledge API that retrieves internal procedures, maintains conversation state, and returns English-first grounded answers with sources and an execution trace.',
+  intelligenceDetails: 'FastAPI exposes Pydantic-validated chat and document-ingestion endpoints. LangGraph coordinates supervisor, retrieval, and writer stages; SQLite persists knowledge and checkpoints, while hybrid retrieval combines lexical and deterministic vector ranking. OpenAI and Phoenix are optional, so the system remains reproducible without paid credentials.',
+  intelligenceRole: 'Design, development, testing, and documentation',
+  intelligenceStatus: 'Public repository',
+  intelligenceOnline: 'Intelligence System / GitHub',
+  intelligenceRepoLabel: 'View repository ↗',
+  intelligenceRepoTitle: 'Intelligence System source repository'
+});
+
+Object.assign(translations.es, {
+  intelligenceKind: 'Ingeniería de sistemas de IA · 2026',
+  intelligenceDescription: 'API de conocimiento local que recupera procedimientos internos, mantiene el estado conversacional y devuelve respuestas fundamentadas en inglés por defecto, con fuentes y una traza de ejecución.',
+  intelligenceDetails: 'FastAPI expone endpoints de chat e ingesta documental validados con Pydantic. LangGraph coordina las etapas de supervisor, recuperación y redacción; SQLite persiste conocimiento y checkpoints, mientras la recuperación híbrida combina ranking léxico y vectorial determinista. OpenAI y Phoenix son opcionales, por lo que el sistema se reproduce sin credenciales pagas.',
+  intelligenceRole: 'Diseño, desarrollo, pruebas y documentación',
+  intelligenceStatus: 'Repositorio público',
+  intelligenceOnline: 'Intelligence System / GitHub',
+  intelligenceRepoLabel: 'Ver repositorio ↗',
+  intelligenceRepoTitle: 'Repositorio fuente de Intelligence System'
+});
+
+Object.assign(translations.en, {
   greenhouseKind: 'IoT automation and technical operations · In progress',
   greenhouseTitle: 'IoT Automation & Monitoring',
   greenhouseDescription: 'An IoT monitoring and technical-operations system for a live growing environment. It combines Home Assistant, Tuya sensors, pump monitoring, MQTT, dashboards, historical data, scheduled reports, Telegram alerts, and a responsive web interface to make environmental conditions and operational incidents observable.',
