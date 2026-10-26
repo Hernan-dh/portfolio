@@ -60,8 +60,9 @@ Object.assign(translations.en, {
   intelligenceDescription: 'A local-first knowledge API that retrieves internal procedures, maintains conversation state, and returns English-first grounded answers with sources and an execution trace.',
   intelligenceDetails: 'FastAPI exposes Pydantic-validated chat and document-ingestion endpoints. LangGraph coordinates supervisor, retrieval, and writer stages; SQLite persists knowledge and checkpoints, while hybrid retrieval combines lexical and deterministic vector ranking. OpenAI and Phoenix are optional, so the system remains reproducible without paid credentials.',
   intelligenceRole: 'Design, development, testing, and documentation',
-  intelligenceStatus: 'Public repository',
-  intelligenceOnline: 'Intelligence System / GitHub',
+  intelligenceStatus: 'Live demo',
+  intelligenceOnline: 'Intelligence System / online',
+  intelligenceIframeTitle: 'Intelligence System knowledge API',
   intelligenceRepoLabel: 'View repository ↗',
   intelligenceRepoTitle: 'Intelligence System source repository'
 });
@@ -71,8 +72,9 @@ Object.assign(translations.es, {
   intelligenceDescription: 'API de conocimiento local que recupera procedimientos internos, mantiene el estado conversacional y devuelve respuestas fundamentadas en inglés por defecto, con fuentes y una traza de ejecución.',
   intelligenceDetails: 'FastAPI expone endpoints de chat e ingesta documental validados con Pydantic. LangGraph coordina las etapas de supervisor, recuperación y redacción; SQLite persiste conocimiento y checkpoints, mientras la recuperación híbrida combina ranking léxico y vectorial determinista. OpenAI y Phoenix son opcionales, por lo que el sistema se reproduce sin credenciales pagas.',
   intelligenceRole: 'Diseño, desarrollo, pruebas y documentación',
-  intelligenceStatus: 'Repositorio público',
-  intelligenceOnline: 'Intelligence System / GitHub',
+  intelligenceStatus: 'Demo en línea',
+  intelligenceOnline: 'Intelligence System / en línea',
+  intelligenceIframeTitle: 'API de conocimiento Intelligence System',
   intelligenceRepoLabel: 'Ver repositorio ↗',
   intelligenceRepoTitle: 'Repositorio fuente de Intelligence System'
 });

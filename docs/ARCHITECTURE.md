@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Static portfolio for Hernán de Haro. It presents his profile and projects and embeds Agentic Twin, Deep Research, AI Debate, Financial Researcher, Stock Picker, AI Operations Desk, and Event Ticketing & Access Control as external applications. Intelligence System is presented as a static repository card because it is an API project without a public hosted interface.
+Static portfolio for Hernán de Haro. It presents his profile and projects and embeds Agentic Twin, Deep Research, AI Debate, Financial Researcher, Stock Picker, AI Operations Desk, Event Ticketing & Access Control, and Intelligence System as external applications.
 
 ## Components
 
@@ -18,7 +18,7 @@ There is no backend, database, build step, or local runtime dependency. Google F
 
 Repository publication is handled separately by the dependency-free `scripts/publish.py`. It sends a bounded change context to Gemini or Groq to propose commit metadata before explicit human confirmation.
 
-Sidekick is presented as a static, versioned screenshot with an isolated GitHub repository link. Intelligence System is presented as a repository panel. Their hosted runtimes are not exposed from the portfolio.
+Sidekick is presented as a static, versioned screenshot with an isolated GitHub repository link. Its hosted runtime is not exposed from the portfolio.
 
 ## Localization
 
