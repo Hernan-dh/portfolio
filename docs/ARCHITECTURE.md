@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Static portfolio for Hernán de Haro. It presents his profile and projects and embeds Agentic Twin, Deep Research, AI Debate, Financial Researcher, Stock Picker, AI Operations Desk, Event Ticketing & Access Control, and Intelligence System as external applications.
+Static portfolio for Hernán de Haro. It presents his profile and projects and embeds Agentic Twin, Deep Research, AI Debate, Financial Researcher, Stock Picker, AI Operations Desk, Event Ticketing & Access Control, and AI Knowledge Copilot as external applications.
 
 ## Components
 

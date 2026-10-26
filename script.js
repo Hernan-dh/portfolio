@@ -57,26 +57,26 @@ Object.assign(translations.es, {
 
 Object.assign(translations.en, {
   intelligenceKind: 'AI systems engineering · 2026',
-  intelligenceDescription: 'A local-first knowledge API that retrieves internal procedures, maintains conversation state, and returns English-first grounded answers with sources and an execution trace.',
+  intelligenceDescription: 'An English-first internal knowledge assistant that retrieves procedures, maintains conversation state, and returns grounded answers with sources and an execution trace.',
   intelligenceDetails: 'FastAPI exposes Pydantic-validated chat and document-ingestion endpoints. LangGraph coordinates supervisor, retrieval, and writer stages; SQLite persists knowledge and checkpoints, while hybrid retrieval combines lexical and deterministic vector ranking. OpenAI and Phoenix are optional, so the system remains reproducible without paid credentials.',
   intelligenceRole: 'Design, development, testing, and documentation',
   intelligenceStatus: 'Live demo',
-  intelligenceOnline: 'Intelligence System / online',
-  intelligenceIframeTitle: 'Intelligence System knowledge API',
+  intelligenceOnline: 'AI Knowledge Copilot / online',
+  intelligenceIframeTitle: 'AI Knowledge Copilot',
   intelligenceRepoLabel: 'View repository ↗',
-  intelligenceRepoTitle: 'Intelligence System source repository'
+  intelligenceRepoTitle: 'AI Knowledge Copilot source repository'
 });
 
 Object.assign(translations.es, {
   intelligenceKind: 'Ingeniería de sistemas de IA · 2026',
-  intelligenceDescription: 'API de conocimiento local que recupera procedimientos internos, mantiene el estado conversacional y devuelve respuestas fundamentadas en inglés por defecto, con fuentes y una traza de ejecución.',
+  intelligenceDescription: 'Asistente de conocimiento interno que recupera procedimientos, mantiene el estado conversacional y devuelve respuestas fundamentadas en inglés por defecto, con fuentes y una traza de ejecución.',
   intelligenceDetails: 'FastAPI expone endpoints de chat e ingesta documental validados con Pydantic. LangGraph coordina las etapas de supervisor, recuperación y redacción; SQLite persiste conocimiento y checkpoints, mientras la recuperación híbrida combina ranking léxico y vectorial determinista. OpenAI y Phoenix son opcionales, por lo que el sistema se reproduce sin credenciales pagas.',
   intelligenceRole: 'Diseño, desarrollo, pruebas y documentación',
   intelligenceStatus: 'Demo en línea',
-  intelligenceOnline: 'Intelligence System / en línea',
-  intelligenceIframeTitle: 'API de conocimiento Intelligence System',
+  intelligenceOnline: 'AI Knowledge Copilot / en línea',
+  intelligenceIframeTitle: 'AI Knowledge Copilot',
   intelligenceRepoLabel: 'Ver repositorio ↗',
-  intelligenceRepoTitle: 'Repositorio fuente de Intelligence System'
+  intelligenceRepoTitle: 'Repositorio fuente de AI Knowledge Copilot'
 });
 
 Object.assign(translations.en, {
