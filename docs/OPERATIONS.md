@@ -12,6 +12,8 @@ Test localization with an English and an `es-*` browser locale. Confirm that the
 
 Also verify the light/dark control persists after a reload and that the navigation, theme control, and project cards remain usable at a narrow mobile viewport.
 
+The Playwright QA Engineering card must expose both its public evidence site and source repository in English and Spanish. The evidence site is independently deployed; its availability must not affect the rest of the portfolio.
+
 ## Verification
 
 ```bash

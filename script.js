@@ -216,6 +216,21 @@ Object.assign(translations.es, {
   visualInformation: 'INFORMACIÓN'
 });
 
+Object.assign(translations.en, {
+  qaKind: 'Quality engineering · 2026',
+  qaDescription: 'A public quality-engineering portfolio that turns test strategy into executable, traceable evidence across UI, API, browser, mobile, accessibility, performance, and security layers.',
+  qaDetails: 'Playwright and TypeScript drive deterministic and public-demo scenarios through Chromium, Firefox, and WebKit. Docker and GitHub Actions validate smoke, shards, report merging, visual baselines, traces, and responsive behavior; a planner, generator, and healer workflow records reviewed agent-assisted test development.',
+  qaRole: 'Test strategy, automation, CI, and documentation', qaStatus: 'Public evidence and repository', qaOnline: 'QA Engineering / public evidence',
+  qaDemoLabel: 'Explore evidence ↗', qaDemoTitle: 'Open the public Playwright QA evidence portfolio', qaRepoLabel: 'View repository ↗', qaRepoTitle: 'Playwright QA Engineering source repository'
+});
+Object.assign(translations.es, {
+  qaKind: 'Ingeniería de calidad · 2026',
+  qaDescription: 'Portfolio público de ingeniería de calidad que convierte la estrategia de pruebas en evidencia ejecutable y trazable para capas de UI, API, navegadores, mobile, accesibilidad, performance y seguridad.',
+  qaDetails: 'Playwright y TypeScript ejecutan escenarios deterministas y demostraciones públicas en Chromium, Firefox y WebKit. Docker y GitHub Actions validan smoke tests, shards, fusión de reportes, baselines visuales, traces y comportamiento responsive; un flujo de planner, generator y healer documenta el desarrollo de pruebas asistido por agentes y revisado.',
+  qaRole: 'Estrategia de pruebas, automatización, CI y documentación', qaStatus: 'Evidencia pública y repositorio', qaOnline: 'Ingeniería QA / evidencia pública',
+  qaDemoLabel: 'Explorar evidencia ↗', qaDemoTitle: 'Abrir el portfolio público de evidencia QA con Playwright', qaRepoLabel: 'Ver repositorio ↗', qaRepoTitle: 'Repositorio fuente de Playwright QA Engineering'
+});
+
 const languageSelector = document.querySelector('#language-selector');
 const menuButton = document.querySelector('.menu-toggle');
 const navigation = document.querySelector('.site-nav');

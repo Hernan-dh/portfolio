@@ -2,6 +2,8 @@
 
 ## Purpose
 
+Playwright QA Engineering is presented as a linked public case study rather than an iframe. Its independent GitHub Pages deployment owns changing execution metrics, reports, and traces, while this portfolio keeps stable bilingual project context and links to both the evidence site and source repository.
+
 Static portfolio for Hernán de Haro. It presents his profile and projects and embeds Agentic Twin, Deep Research, AI Debate, Financial Researcher, Stock Picker, AI Operations Desk, Event Ticketing & Access Control, and AI Knowledge Copilot as external applications.
 
 ## Components

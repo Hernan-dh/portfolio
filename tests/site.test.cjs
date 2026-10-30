@@ -91,3 +91,9 @@ test('theme control switches between light and dark modes', () => {
   assert.equal(app.themeToggle.attrs['aria-pressed'], 'true');
   assert.equal(app.themeLabel.textContent, 'Light mode');
 });
+
+test('QA engineering project exposes public evidence and source links', () => {
+  assert.match(html, /https:\/\/hernan-dh\.github\.io\/playwright_automation\//);
+  assert.match(html, /https:\/\/github\.com\/Hernan-dh\/playwright_automation/);
+  assert.match(html, /data-i18n="qaDescription"/);
+});
