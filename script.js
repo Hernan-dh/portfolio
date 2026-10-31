@@ -218,17 +218,17 @@ Object.assign(translations.es, {
 
 Object.assign(translations.en, {
   qaKind: 'Quality engineering · 2026',
-  qaDescription: 'A public quality-engineering portfolio that turns test strategy into executable, traceable evidence across UI, API, browser, mobile, accessibility, performance, and security layers.',
-  qaDetails: 'Playwright and TypeScript drive deterministic and public-demo scenarios through Chromium, Firefox, and WebKit. Docker and GitHub Actions validate smoke, shards, report merging, visual baselines, traces, and responsive behavior; a planner, generator, and healer workflow records reviewed agent-assisted test development.',
+  qaDescription: 'A public QA automation portfolio that turns test strategy into executable, traceable evidence across UI, API, authentication, browser, mobile, accessibility, performance, and defensive security checks.',
+  qaDetails: 'Built with Playwright and TypeScript, it uses Page Objects, fixtures, data-driven scenarios, JSON Schema contract validation, Cucumber BDD, visual baselines, traces, screenshots, videos, and Allure reporting. Docker and GitHub Actions run smoke, regression, cross-browser, and sharded CI workflows, while documented test plans and traceability connect requirements to executable coverage.',
   qaRole: 'Test strategy, automation, CI, and documentation', qaStatus: 'Public evidence and repository', qaOnline: 'QA Engineering / public evidence',
-  qaDemoLabel: 'Explore evidence ↗', qaDemoTitle: 'Open the public Playwright QA evidence portfolio', qaRepoLabel: 'View repository ↗', qaRepoTitle: 'Playwright QA Engineering source repository'
+  qaDemoLabel: 'Explore evidence ↗', qaDemoTitle: 'Open the public Playwright QA evidence portfolio', qaRepoLabel: 'View repository ↗', qaRepoTitle: 'Playwright QA Engineering source repository', qaIframeTitle: 'Playwright QA Engineering evidence portfolio'
 });
 Object.assign(translations.es, {
   qaKind: 'Ingeniería de calidad · 2026',
-  qaDescription: 'Portfolio público de ingeniería de calidad que convierte la estrategia de pruebas en evidencia ejecutable y trazable para capas de UI, API, navegadores, mobile, accesibilidad, performance y seguridad.',
-  qaDetails: 'Playwright y TypeScript ejecutan escenarios deterministas y demostraciones públicas en Chromium, Firefox y WebKit. Docker y GitHub Actions validan smoke tests, shards, fusión de reportes, baselines visuales, traces y comportamiento responsive; un flujo de planner, generator y healer documenta el desarrollo de pruebas asistido por agentes y revisado.',
+  qaDescription: 'Portfolio público de automatización QA que convierte la estrategia de pruebas en evidencia ejecutable y trazable para UI, API, autenticación, navegadores, mobile, accesibilidad, performance y controles defensivos de seguridad.',
+  qaDetails: 'Construido con Playwright y TypeScript, usa Page Objects, fixtures, escenarios data-driven, validación de contratos con JSON Schema, BDD con Cucumber, baselines visuales, traces, screenshots, videos y reportes Allure. Docker y GitHub Actions ejecutan flujos de smoke, regresión, cross-browser y CI con sharding, mientras los planes y la trazabilidad conectan requisitos con cobertura ejecutable.',
   qaRole: 'Estrategia de pruebas, automatización, CI y documentación', qaStatus: 'Evidencia pública y repositorio', qaOnline: 'Ingeniería QA / evidencia pública',
-  qaDemoLabel: 'Explorar evidencia ↗', qaDemoTitle: 'Abrir el portfolio público de evidencia QA con Playwright', qaRepoLabel: 'Ver repositorio ↗', qaRepoTitle: 'Repositorio fuente de Playwright QA Engineering'
+  qaDemoLabel: 'Explorar evidencia ↗', qaDemoTitle: 'Abrir el portfolio público de evidencia QA con Playwright', qaRepoLabel: 'Ver repositorio ↗', qaRepoTitle: 'Repositorio fuente de Playwright QA Engineering', qaIframeTitle: 'Portfolio de evidencia de Playwright QA Engineering'
 });
 
 // QA Automation is the primary portfolio position; AI and operations support that focus.
