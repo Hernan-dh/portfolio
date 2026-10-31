@@ -231,6 +231,47 @@ Object.assign(translations.es, {
   qaDemoLabel: 'Explorar evidencia ↗', qaDemoTitle: 'Abrir el portfolio público de evidencia QA con Playwright', qaRepoLabel: 'Ver repositorio ↗', qaRepoTitle: 'Repositorio fuente de Playwright QA Engineering'
 });
 
+// QA Automation is the primary portfolio position; AI and operations support that focus.
+Object.assign(translations.en, {
+  metaDescription: "Hernán de Haro's QA Automation portfolio: Playwright, TypeScript, API testing, CI/CD, Docker, and AI automation.",
+  introRole: 'QA Automation Engineer.',
+  introText: 'I build reliable, traceable test automation with Playwright, TypeScript, API testing, CI/CD, and Docker. This portfolio also brings together the AI automation and technical-operations projects that strengthen my quality engineering practice.',
+  projectsIntro: 'Selected work in QA automation, test evidence, reliable systems, and AI-assisted workflows.',
+  profileTitle: 'QA Automation and systems thinking',
+  profileOne: 'I am a QA Automation Engineer with hands-on experience in exploratory, functional, non-functional, and regression testing, as well as test planning, defect reporting, and technical documentation.',
+  profileTwo: 'My core focus is maintainable test automation with Playwright, TypeScript, API testing, CI/CD, and Docker. I also use Python, SQL, Postman, REST APIs, and JSON Schema to validate systems and data.',
+  profileThree: 'My background in Information Science, AI automation, and technical operations shapes a practical approach to quality: clear requirements, deterministic validation, useful evidence, traceability, and systems that teams can operate with confidence.',
+  workAreas: 'Core areas',
+  areaAutomation: 'Playwright test automation and TypeScript',
+  areaInfrastructure: 'API, E2E, cross-browser, and mobile testing',
+  areaData: 'CI/CD, Docker, test evidence, and reporting',
+  areaResearch: 'Test strategy, planning, and traceability',
+  areaQa: 'AI-assisted testing and workflow automation',
+  areaOperations: 'Technical operations, data quality, and IoT',
+  contactText: 'For QA Automation Engineer opportunities and technical collaborations, explore my public work on GitHub.',
+  visualAutomation: 'QA AUTOMATION', visualOperations: 'API & E2E TESTING', visualIot: 'CI/CD & DOCKER', visualInformation: 'AI AUTOMATION'
+});
+
+Object.assign(translations.es, {
+  metaDescription: 'Portfolio de QA Automation de Hernán de Haro: Playwright, TypeScript, API Testing, CI/CD, Docker y automatización con IA.',
+  introRole: 'QA Automation Engineer.',
+  introText: 'Construyo automatización de pruebas confiable y trazable con Playwright, TypeScript, API Testing, CI/CD y Docker. Este portfolio también reúne proyectos de automatización con IA y operaciones técnicas que fortalecen mi práctica de ingeniería de calidad.',
+  projectsIntro: 'Trabajo seleccionado en automatización QA, evidencia de pruebas, sistemas confiables y workflows asistidos por IA.',
+  profileTitle: 'QA Automation y pensamiento sistémico',
+  profileOne: 'Soy QA Automation Engineer con experiencia práctica en testing exploratorio, funcional, no funcional y de regresión, además de planificación de pruebas, reporte de defectos y documentación técnica.',
+  profileTwo: 'Mi foco principal es la automatización de pruebas mantenible con Playwright, TypeScript, API Testing, CI/CD y Docker. También uso Python, SQL, Postman, REST APIs y JSON Schema para validar sistemas y datos.',
+  profileThree: 'Mi formación en Ciencias de la Información, automatización con IA y operaciones técnicas aporta un enfoque práctico de calidad: requisitos claros, validación determinística, evidencia útil, trazabilidad y sistemas que los equipos puedan operar con confianza.',
+  workAreas: 'Áreas principales',
+  areaAutomation: 'Automatización de pruebas con Playwright y TypeScript',
+  areaInfrastructure: 'Testing de API, E2E, cross-browser y mobile',
+  areaData: 'CI/CD, Docker, evidencia y reportes de pruebas',
+  areaResearch: 'Estrategia, planificación y trazabilidad de pruebas',
+  areaQa: 'Testing asistido por IA y automatización de workflows',
+  areaOperations: 'Operaciones técnicas, calidad de datos e IoT',
+  contactText: 'Para oportunidades como QA Automation Engineer y colaboraciones técnicas, podés explorar mi trabajo público en GitHub.',
+  visualAutomation: 'AUTOMATIZACIÓN QA', visualOperations: 'API Y TESTING E2E', visualIot: 'CI/CD Y DOCKER', visualInformation: 'AUTOMATIZACIÓN IA'
+});
+
 const languageSelector = document.querySelector('#language-selector');
 const menuButton = document.querySelector('.menu-toggle');
 const navigation = document.querySelector('.site-nav');
@@ -238,6 +279,12 @@ const revealElements = document.querySelectorAll('.reveal');
 const themeToggle = document.querySelector('#theme-toggle');
 const themeLabel = document.querySelector('#theme-label');
 const skillsCarouselTrack = document.querySelector('#skills-carousel-track');
+
+const projectDisplayNumbers = ['03', '06', '05', '09', '10', '11', '12', '13', '04', '08', '02', '01', '07'];
+document.querySelectorAll('.projects > article .project-number').forEach((element, index) => {
+  const number = projectDisplayNumbers[index];
+  if (number) element.textContent = number;
+});
 
 const rotatingSkills = Array.isArray(window.portfolioSkills) ? window.portfolioSkills : [];
 
