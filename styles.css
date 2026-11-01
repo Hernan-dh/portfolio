@@ -1,24 +1,20 @@
 :root {
-  --ink: #13201c;
-  --paper: #f5f2e9;
-  --paper-dark: #ebe7dc;
-  --acid: #0d6b4f;
-  --orange: #ef5b35;
-  --line: #d9d7cd;
+  --ink: #111412;
+  --paper: #e9e9e3;
+  --paper-dark: #d7d8d0;
+  --acid: #c7ff37;
+  --orange: #ff6947;
+  --line: rgb(17 20 18 / 22%);
   --visual-line: var(--line);
-  --muted: #5d6b65;
-  --surface-strong: #10251f;
-  --on-strong: #f7f2e8;
-  --core-surface: #10251f;
-  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-  --sans: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --muted: #676e69;
+  --surface-strong: #111412;
+  --on-strong: #fff;
+  --core-surface: #111412;
+  --mono: "DM Mono", monospace;
+  --sans: "Manrope", sans-serif;
   --gutter: clamp(22px, 5vw, 76px);
   --section-space: clamp(95px, 11vw, 170px);
 }
-
-/* Playwright Automation visual system */
-:root { --ink:#13201c; --paper:#f5f2e9; --paper-dark:#ebe7dc; --acid:#0d6b4f; --orange:#ef5b35; --line:#d9d7cd; --visual-line:var(--line); --muted:#5d6b65; --surface-strong:#10251f; --on-strong:#f7f2e8; --core-surface:#10251f; --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; --sans:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif; }
-:root[data-theme="dark"] { --ink:#f7f2e8; --paper:#10251f; --paper-dark:#18352b; --acid:#66c49a; --orange:#ff8a69; --line:rgb(247 242 232 / 20%); --visual-line:rgb(247 242 232 / 48%); --muted:#b6c1bb; --surface-strong:#071a14; --on-strong:#f7f2e8; --core-surface:#18352b; }
 
 :root[data-theme="dark"] {
   --ink: #eef3ee;
@@ -276,6 +272,3 @@ footer { min-height: 100px; display: flex; align-items: center; justify-content:
   .contact-content p { font-size: 16px; }
   footer { align-items: flex-start; flex-direction: column; gap: 16px; padding-block: 28px; }
 }
-
-/* Keep the dark preference aligned with the Playwright Automation palette. */
-:root[data-theme="dark"] { --ink:#f7f2e8; --paper:#10251f; --paper-dark:#18352b; --acid:#66c49a; --orange:#ff8a69; --line:rgb(247 242 232 / 20%); --visual-line:rgb(247 242 232 / 48%); --muted:#b6c1bb; --surface-strong:#071a14; --on-strong:#f7f2e8; --core-surface:#18352b; }
