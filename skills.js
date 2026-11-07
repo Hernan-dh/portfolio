@@ -13,7 +13,8 @@ window.portfolioSkills = [
   'PostgreSQL', 'SQLite', 'MySQL', 'Redis',
   'Git', 'GitHub', 'CI/CD', 'GitHub Actions', 'Jenkins', 'Docker', 'Docker Compose', 'Linux',
   'DevOps', 'Cloud Deployment', 'Browser Automation', 'Webhooks', 'System Integration',
-  'HTML', 'CSS', 'Responsive Web Design', 'Node.js', 'React', 'Express.js', 'FastAPI', 'Gradio',
+  'HTML', 'CSS', 'Responsive Web Design', 'Static Site Development', 'Browser Local Storage', 'GitHub Pages',
+  'Node.js', 'React', 'Express.js', 'FastAPI', 'Gradio',
 
   // AI Automation: complementary specialization.
   'AI Automation', 'Workflow Automation', 'Automation', 'AI Agents', 'Large Language Models (LLMs)',
@@ -33,7 +34,8 @@ window.portfolioSkills = [
   // Data, information, and professional practice.
   'Software Testing', 'Data Quality', 'Data Validation', 'Data Pipelines', 'Data Processing', 'ETL', 'Data Analysis',
   'Data Visualization', 'Data Documentation', 'Database Design', 'Information Science',
-  'Information Architecture', 'Information Retrieval', 'Knowledge Management', 'Information Management',
+  'Information Architecture', 'Technical Content Architecture', 'Content Quality Assurance', 'Information Retrieval',
+  'Knowledge Management', 'Information Management',
   'Metadata', 'Documentation Management', 'Technical Documentation', 'Web Research', 'Technical Research',
   'Research Methodology', 'Report Writing', 'Requirements Analysis', 'Process Improvement',
   'Business Analysis', 'Stakeholder Communication', 'Project Management', 'Privacy by Design',

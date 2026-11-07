@@ -234,7 +234,7 @@ Object.assign(translations.es, {
 Object.assign(translations.en, {
   learningKind: 'Quality engineering · 2026',
   learningDescription: 'A browser-based learning platform for QA, test automation, software engineering, AI automation, and technical operations.',
-  learningDetails: 'The buildless static application combines five learning paths, a complete Learning Guide, and 746 explained multiple-choice questions. JavaScript filters, randomizes, scores, and explains sessions locally; browser localStorage records attempts, correct-answer history, and timestamps without accounts, cookies, analytics, APIs, or backend services. GitHub Pages deploys the validated dist/ directory through an automated workflow.',
+  learningDetails: 'The buildless static application combines five learning paths, a complete Learning Guide, and 746 explained multiple-choice questions. JavaScript filters, randomizes, scores, and explains sessions locally; browser localStorage records attempts, correct-answer history, and timestamps without accounts, cookies, analytics, APIs, or backend services. Every question links to its relevant guide topic, while a Node.js content-QA validator rejects duplicate questions or choices, malformed answer structures, missing guide anchors, and likely distractor-quality issues. Playwright covers the principal learning flows, and GitHub Actions validates the dist/ directory before GitHub Pages deployment.',
   learningRole: 'Design, content architecture, development, testing, and documentation',
   learningStatus: 'Public learning platform',
   learningOnline: 'QA & AI Learning Platform / online',
@@ -246,7 +246,7 @@ Object.assign(translations.en, {
 Object.assign(translations.es, {
   learningKind: 'Ingeniería de calidad · 2026',
   learningDescription: 'Plataforma de aprendizaje en el navegador para QA, automatización de pruebas, ingeniería de software, automatización con IA y operaciones técnicas.',
-  learningDetails: 'La aplicación estática sin build reúne cinco recorridos de aprendizaje, una Guía de Aprendizaje completa y 746 preguntas de opción múltiple explicadas. JavaScript filtra, aleatoriza, puntúa y explica las sesiones de forma local; localStorage del navegador registra intentos, historial de respuestas correctas y marcas de tiempo sin cuentas, cookies, analítica, APIs ni servicios de backend. GitHub Pages despliega el directorio dist/ validado mediante un workflow automatizado.',
+  learningDetails: 'La aplicación estática sin build reúne cinco recorridos de aprendizaje, una Guía de Aprendizaje completa y 746 preguntas de opción múltiple explicadas. JavaScript filtra, aleatoriza, puntúa y explica las sesiones de forma local; localStorage del navegador registra intentos, historial de respuestas correctas y marcas de tiempo sin cuentas, cookies, analítica, APIs ni servicios de backend. Cada pregunta enlaza con el tema correspondiente de la guía, mientras un validador de calidad de contenidos en Node.js rechaza preguntas u opciones duplicadas, estructuras de respuesta malformadas, anclas inexistentes de la guía y problemas probables en la calidad de los distractores. Playwright cubre los flujos principales de aprendizaje y GitHub Actions valida el directorio dist/ antes del despliegue en GitHub Pages.',
   learningRole: 'Diseño, arquitectura de contenidos, desarrollo, testing y documentación',
   learningStatus: 'Plataforma pública de aprendizaje',
   learningOnline: 'QA & AI Learning Platform / en línea',
