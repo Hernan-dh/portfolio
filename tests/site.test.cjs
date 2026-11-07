@@ -97,3 +97,9 @@ test('QA engineering project exposes public evidence and source links', () => {
   assert.match(html, /https:\/\/github\.com\/Hernan-dh\/playwright_automation/);
   assert.match(html, /data-i18n="qaDescription"/);
 });
+
+test('learning platform exposes its public embed and source repository', () => {
+  assert.match(html, /https:\/\/hernan-dh\.github\.io\/learning-platform\//);
+  assert.match(html, /https:\/\/github\.com\/Hernan-dh\/learning-platform/);
+  assert.match(html, /data-i18n="learningDetails"/);
+});

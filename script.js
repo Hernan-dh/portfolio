@@ -231,6 +231,30 @@ Object.assign(translations.es, {
   qaDemoLabel: 'Explorar evidencia ↗', qaDemoTitle: 'Abrir el portfolio público de evidencia QA con Playwright', qaRepoLabel: 'Ver repositorio ↗', qaRepoTitle: 'Repositorio fuente de Playwright QA Engineering', qaIframeTitle: 'Portfolio de evidencia de Playwright QA Engineering'
 });
 
+Object.assign(translations.en, {
+  learningKind: 'Quality engineering · 2026',
+  learningDescription: 'A browser-based learning platform for QA, test automation, software engineering, AI automation, and technical operations.',
+  learningDetails: 'The buildless static application combines five learning paths, a complete Learning Guide, and 746 explained multiple-choice questions. JavaScript filters, randomizes, scores, and explains sessions locally; browser localStorage records attempts, correct-answer history, and timestamps without accounts, cookies, analytics, APIs, or backend services. GitHub Pages deploys the validated dist/ directory through an automated workflow.',
+  learningRole: 'Design, content architecture, development, testing, and documentation',
+  learningStatus: 'Public learning platform',
+  learningOnline: 'QA & AI Learning Platform / online',
+  learningRepoLabel: 'View repository ↗',
+  learningRepoTitle: 'QA & AI Learning Platform source repository',
+  learningIframeTitle: 'QA & AI Learning Platform'
+});
+
+Object.assign(translations.es, {
+  learningKind: 'Ingeniería de calidad · 2026',
+  learningDescription: 'Plataforma de aprendizaje en el navegador para QA, automatización de pruebas, ingeniería de software, automatización con IA y operaciones técnicas.',
+  learningDetails: 'La aplicación estática sin build reúne cinco recorridos de aprendizaje, una Guía de Aprendizaje completa y 746 preguntas de opción múltiple explicadas. JavaScript filtra, aleatoriza, puntúa y explica las sesiones de forma local; localStorage del navegador registra intentos, historial de respuestas correctas y marcas de tiempo sin cuentas, cookies, analítica, APIs ni servicios de backend. GitHub Pages despliega el directorio dist/ validado mediante un workflow automatizado.',
+  learningRole: 'Diseño, arquitectura de contenidos, desarrollo, testing y documentación',
+  learningStatus: 'Plataforma pública de aprendizaje',
+  learningOnline: 'QA & AI Learning Platform / en línea',
+  learningRepoLabel: 'Ver repositorio ↗',
+  learningRepoTitle: 'Repositorio fuente de QA & AI Learning Platform',
+  learningIframeTitle: 'QA & AI Learning Platform'
+});
+
 // QA Automation is the primary portfolio position; AI and operations support that focus.
 Object.assign(translations.en, {
   metaDescription: "Hernán de Haro's QA Automation portfolio: Playwright, TypeScript, API testing, CI/CD, Docker, and AI automation.",
@@ -280,7 +304,7 @@ const themeToggle = document.querySelector('#theme-toggle');
 const themeLabel = document.querySelector('#theme-label');
 const skillsCarouselTrack = document.querySelector('#skills-carousel-track');
 
-const projectDisplayNumbers = ['03', '06', '05', '09', '10', '11', '12', '13', '04', '08', '02', '01', '07'];
+const projectDisplayNumbers = ['03', '06', '05', '09', '10', '11', '12', '13', '04', '08', '02', '01', '07', '14'];
 document.querySelectorAll('.projects > article .project-number').forEach((element, index) => {
   const number = projectDisplayNumbers[index];
   if (number) element.textContent = number;
